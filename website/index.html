@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ── Primary SEO ─────────────────────────────────────────── -->
+  <title>ShadowSecurityScanner — Modern Network Vulnerability Scanner</title>
+  <meta name="description" content="ShadowSecurityScanner is a fast, modern open-source network vulnerability scanner: service & OS fingerprinting, EPSS/KEV exploit prioritisation, scan diffing, a live audit catalog and SARIF/PDF reporting — in a native desktop app for Windows, macOS and Linux." />
+  <meta name="keywords" content="vulnerability scanner, network security scanner, EPSS, CISA KEV, SARIF, open source security tool, penetration testing, OS fingerprinting, CVE scanner, Shadow Security Scanner, SSS" />
+  <meta name="author" content="GreenCandy Solutions" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://andriigordiienko.github.io/ShadowSecurityScanner-site/" />
+
+  <!-- ── Open Graph (Facebook, LinkedIn, Slack, …) ───────────── -->
+  <meta property="og:site_name" content="ShadowSecurityScanner" />
+  <meta property="og:title" content="ShadowSecurityScanner — Modern Network Vulnerability Scanner" />
+  <meta property="og:description" content="Open-source network vulnerability scanner with exploit-aware EPSS/KEV prioritisation, scan diffing, a live audit catalog and SARIF/PDF reporting." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ShadowSecurityScanner — modern network vulnerability scanner" />
+
+  <!-- ── Twitter / X cards ───────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ShadowSecurityScanner — Modern Network Vulnerability Scanner" />
+  <meta name="twitter:description" content="Open-source network vulnerability scanner with exploit-aware EPSS/KEV prioritisation, scan diffing and SARIF/PDF reporting." />
+  <meta name="twitter:image" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="ShadowSecurityScanner — modern network vulnerability scanner" />
+
+  <!-- ── Icons & manifest ────────────────────────────────────── -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/logo.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- ── Performance hints ───────────────────────────────────── -->
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ── Structured data (JSON-LD) ───────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/#app",
+        "name": "ShadowSecurityScanner",
+        "applicationCategory": "SecurityApplication",
+        "applicationSubCategory": "Network Vulnerability Scanner",
+        "operatingSystem": "Windows, macOS, Linux",
+        "description": "A fast, modern open-source network vulnerability scanner with service & OS fingerprinting, EPSS/KEV exploit prioritisation, scan diffing, a live audit catalog and SARIF/PDF reporting.",
+        "url": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/",
+        "downloadUrl": "https://github.com/andriigordiienko/ShadowSecurityScanner/releases",
+        "softwareVersion": "0.1.0",
+        "image": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png",
+        "license": "https://opensource.org/licenses/MIT",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": [
+          "Service & OS fingerprinting (incl. Windows version via SMB2 NTLM)",
+          "EPSS & CISA KEV exploit-aware prioritisation",
+          "Active web/CGI probes with soft-404 calibration",
+          "Scan diffing: new / regressed / resolved",
+          "Live audit catalog of CVEs and checks",
+          "PDF, HTML, SARIF, XML and CSV reports"
+        ],
+        "publisher": { "@id": "https://greencandy.solutions/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://greencandy.solutions/#org",
+        "name": "GreenCandy Solutions",
+        "description": "Security tooling & research.",
+        "email": "eugene.kucherenko@greencandy.solutions",
+        "sameAs": [ "https://github.com/andriigordiienko/ShadowSecurityScanner" ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/#website",
+        "url": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/",
+        "name": "ShadowSecurityScanner",
+        "publisher": { "@id": "https://greencandy.solutions/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is it safe and legal to use?",
+            "acceptedAnswer": { "@type": "Answer", "text": "ShadowSecurityScanner is for authorized security testing only — scan systems you own or are explicitly permitted to assess. Denial-of-service tests are intentionally excluded." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does my data live?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Entirely on your machine. The app stores its database in your user profile. There is no telemetry and no cloud component." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are EPSS and KEV?",
+            "acceptedAnswer": { "@type": "Answer", "text": "EPSS (FIRST.org) is the probability a CVE will be exploited in the next 30 days. KEV (CISA) is the catalog of vulnerabilities known to be actively exploited. Together they turn a flat list of findings into a real priority order." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the catalog update automatically?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The audit catalog refreshes from a signed update feed (CISA KEV daily, plus Nuclei and curated advisories), optionally enriched with CVSS/CWE from NVD and EPSS scores." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it open source?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes — released under the MIT License. Browse the code, build it yourself, or open an issue on GitHub." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ───────────────────────── Header ───────────────────────── -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ShadowSecurityScanner home">
+      <img src="assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#prioritise">Prioritisation</a>
+      <a href="#reports">Reports</a>
+      <a href="#screens">Screens</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="https://github.com/andriigordiienko/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="btn btn-primary" href="#download">Download</a>
+    </div>
+  </header>
+
+  <!-- ───────────────────────── Hero ───────────────────────── -->
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="pill"><span class="dot"></span> Open-source · self-hosted · no cloud</span>
+        <h1>See your attack surface. <span class="grad">Fix what's actually exploited.</span></h1>
+        <p class="lead">
+          ShadowSecurityScanner is a fast, modern network vulnerability scanner — a clean-room
+          reimagining of the classic SSS. It fingerprints services and operating systems, runs
+          thousands of catalogued checks, and ranks every finding by <strong>real-world exploit
+          probability</strong>, not just raw severity.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#download">
+            <svg viewBox="0 0 24 24" class="ic"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download for Windows
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://github.com/andriigordiienko/ShadowSecurityScanner" target="_blank" rel="noreferrer">View source</a>
+        </div>
+        <div class="hero-meta">
+          <span>Native desktop app</span><i></i>
+          <span>Windows · macOS · Linux</span><i></i>
+          <span>Single binary</span>
+        </div>
+      </div>
+
+      <!-- Dashboard mockup -->
+      <div class="hero-shot">
+        <div class="window">
+          <div class="window-bar"><i></i><i></i><i></i><span>ShadowSecurityScanner</span></div>
+          <div class="window-body dash">
+            <div class="dash-cards">
+              <div class="kpi"><div class="kpi-n">128</div><div class="kpi-l">Vulnerabilities</div></div>
+              <div class="kpi crit"><div class="kpi-n">7</div><div class="kpi-l">Critical</div></div>
+              <div class="kpi"><div class="kpi-n">42</div><div class="kpi-l">Targets</div></div>
+            </div>
+            <div class="dash-row">
+              <div class="donut" role="img" aria-label="Severity distribution"></div>
+              <div class="fixfirst">
+                <div class="ff-head">🔥 Fix First</div>
+                <div class="ff-row"><span class="sev sev-crit">CRIT</span><span class="ff-t">EternalBlue / MS17-010</span><span class="badge-kev">KEV</span><span class="ff-e">97%</span></div>
+                <div class="ff-row"><span class="sev sev-crit">CRIT</span><span class="ff-t">regreSSHion (OpenSSH)</span><span class="badge-kev">KEV</span><span class="ff-e">92%</span></div>
+                <div class="ff-row"><span class="sev sev-high">HIGH</span><span class="ff-t">Apache path traversal</span><span class="ff-e">71%</span></div>
+                <div class="ff-row"><span class="sev sev-high">HIGH</span><span class="ff-t">nginx rewrite overflow</span><span class="ff-e">44%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Stats ───────────────────────── -->
+  <section class="stats">
+    <div class="stat"><div class="stat-n">6,000+</div><div class="stat-l">audit checks</div></div>
+    <div class="stat"><div class="stat-n">2,300+</div><div class="stat-l">active web probes</div></div>
+    <div class="stat"><div class="stat-n">EPSS + KEV</div><div class="stat-l">exploit-aware ranking</div></div>
+    <div class="stat"><div class="stat-n">5</div><div class="stat-l">report formats</div></div>
+    <div class="stat"><div class="stat-n">daily</div><div class="stat-l">catalog auto-update</div></div>
+  </section>
+
+  <!-- ───────────────────────── Features ───────────────────────── -->
+  <section class="section" id="features">
+    <div class="section-head">
+      <span class="eyebrow">Capabilities</span>
+      <h2>Everything you need to find, rank and report</h2>
+      <p>A complete scanning workflow in one app — discovery, detection, prioritisation and reporting.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="card">
+        <div class="card-ic">🛰️</div>
+        <h3>Service &amp; OS fingerprinting</h3>
+        <p>Heuristic identification across HTTP, DNS, SMB, LDAP, SSH, mail and more — including unauthenticated <strong>Windows version detection</strong> via the SMB2 NTLM challenge.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">🔥</div>
+        <h3>Exploit-aware prioritisation</h3>
+        <p>Every finding carries its <strong>EPSS</strong> exploit probability and a <strong>CISA KEV</strong> "known-exploited" flag, so you fix what attackers actually use first.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">🌐</div>
+        <h3>Active web probes</h3>
+        <p>Thousands of CGI / web-app checks (legacy SSS + Nuclei templates), de-duplicated by path with soft-404 calibration to keep false positives low.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">📈</div>
+        <h3>Scan diffing</h3>
+        <p>Compare a scan to the prior state of its targets: what's <em>new</em>, what <em>regressed</em> after being fixed, and what's been <em>resolved</em>.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">📚</div>
+        <h3>Live audit catalog</h3>
+        <p>A browsable knowledge base of CVEs and checks — CISA KEV, Nuclei and curated advisories — refreshed daily with signed updates and NVD/EPSS enrichment.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">🖥️</div>
+        <h3>Native desktop app</h3>
+        <p>A single self-contained binary with its own window. No cloud, no agents, no database server — your data stays on your machine.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Prioritisation deep-dive ───────────────────────── -->
+  <section class="section split" id="prioritise">
+    <div class="split-copy">
+      <span class="eyebrow">Fix First</span>
+      <h2>Severity tells you how bad. <span class="grad">EPSS &amp; KEV tell you how likely.</span></h2>
+      <p>
+        A CVSS 9.8 that nobody exploits can wait; a CVSS 7 that's actively exploited can't.
+        ShadowSecurityScanner folds <strong>FIRST.org EPSS</strong> (30-day exploit probability)
+        and the <strong>CISA Known Exploited Vulnerabilities</strong> list onto every finding.
+      </p>
+      <ul class="checklist">
+        <li>Sort findings by a true "fix-first" order: KEV → EPSS → severity</li>
+        <li>One-click "Most exploited" filter on the catalog and findings</li>
+        <li>A dashboard widget that surfaces the most exploitable open issues</li>
+        <li>Signals carried through to exports (incl. SARIF for CI/CD)</li>
+      </ul>
+    </div>
+    <div class="split-shot">
+      <div class="window">
+        <div class="window-bar"><i></i><i></i><i></i><span>Vulnerabilities — Fix first</span></div>
+        <div class="window-body list">
+          <div class="lrow lhead"><span>Severity</span><span class="grow">Vulnerability</span><span>EPSS</span><span>CVSS</span></div>
+          <div class="lrow"><span class="sev sev-crit">CRITICAL</span><span class="grow">SMBv1 RCE (MS17-010) <span class="badge-kev">KEV</span></span><span class="hot">97%</span><span>9.3</span></div>
+          <div class="lrow"><span class="sev sev-crit">CRITICAL</span><span class="grow">OpenSSH regreSSHion <span class="badge-kev">KEV</span></span><span class="hot">92%</span><span>8.1</span></div>
+          <div class="lrow"><span class="sev sev-high">HIGH</span><span class="grow">Apache mod_cgi traversal</span><span class="hot">71%</span><span>9.8</span></div>
+          <div class="lrow"><span class="sev sev-high">HIGH</span><span class="grow">Exim crafted-SNI RCE</span><span>38%</span><span>9.8</span></div>
+          <div class="lrow"><span class="sev sev-med">MEDIUM</span><span class="grow">TLS weak cipher suites</span><span>3%</span><span>5.3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Scan diff ───────────────────────── -->
+  <section class="section split reverse">
+    <div class="split-copy">
+      <span class="eyebrow">Track progress</span>
+      <h2>Know exactly what changed between scans</h2>
+      <p>
+        Re-scan and instantly see your remediation progress — and catch regressions where a
+        previously fixed issue has come back.
+      </p>
+      <ul class="checklist">
+        <li><b class="c-new">New</b> — first discovered in this scan</li>
+        <li><b class="c-reg">Regressed</b> — re-appeared after being marked fixed</li>
+        <li><b class="c-res">Resolved</b> — no longer observed on the target</li>
+      </ul>
+    </div>
+    <div class="split-shot">
+      <div class="window">
+        <div class="window-bar"><i></i><i></i><i></i><span>Scan · Changes</span></div>
+        <div class="window-body">
+          <div class="delta-cards">
+            <div class="dc dc-new"><div class="dc-n">12</div><div class="dc-l">New</div></div>
+            <div class="dc dc-reg"><div class="dc-n">2</div><div class="dc-l">Regressed</div></div>
+            <div class="dc dc-res"><div class="dc-n">31</div><div class="dc-l">Resolved</div></div>
+          </div>
+          <div class="list compact">
+            <div class="lrow"><span class="tag tag-new">NEW</span><span class="grow">Redis exposed without auth</span><span class="sev sev-crit">CRIT</span></div>
+            <div class="lrow"><span class="tag tag-reg">REGRESSED</span><span class="grow">Default Tomcat manager creds</span><span class="sev sev-high">HIGH</span></div>
+            <div class="lrow"><span class="tag tag-res">RESOLVED</span><span class="grow strike">SMBv1 enabled</span><span class="sev sev-high">HIGH</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Reports / integrations ───────────────────────── -->
+  <section class="section" id="reports">
+    <div class="section-head">
+      <span class="eyebrow">Report &amp; integrate</span>
+      <h2>Boardroom PDFs and CI-ready SARIF</h2>
+      <p>Export polished reports for stakeholders or machine-readable results for your pipeline.</p>
+    </div>
+    <div class="formats">
+      <div class="fmt"><span class="fmt-x">PDF</span><span>Print-ready, branded</span></div>
+      <div class="fmt"><span class="fmt-x">HTML</span><span>Interactive</span></div>
+      <div class="fmt"><span class="fmt-x">SARIF</span><span>GitHub code scanning</span></div>
+      <div class="fmt"><span class="fmt-x">XML</span><span>Machine-readable</span></div>
+      <div class="fmt"><span class="fmt-x">CSV</span><span>Raw data</span></div>
+    </div>
+    <div class="tech">
+      <span class="tech-l">Built with</span>
+      <span class="chip">Go</span><span class="chip">React</span><span class="chip">Wails</span><span class="chip">SQLite</span><span class="chip">No CGO</span>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Screens ───────────────────────── -->
+  <section class="section" id="screens">
+    <div class="section-head">
+      <span class="eyebrow">A closer look</span>
+      <h2>Designed like a modern SOC console</h2>
+      <p>Fast, keyboard-driven, dark by default — built for analysts who live in the tool.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot-card">
+        <div class="window sm">
+          <div class="window-bar"><i></i><i></i><i></i><span>Dashboard</span></div>
+          <div class="window-body dash">
+            <div class="dash-cards">
+              <div class="kpi"><div class="kpi-n">128</div><div class="kpi-l">Findings</div></div>
+              <div class="kpi crit"><div class="kpi-n">7</div><div class="kpi-l">Critical</div></div>
+            </div>
+            <div class="donut sm" aria-hidden="true"></div>
+          </div>
+        </div>
+        <figcaption>Risk-adjusted overview &amp; "fix first" widget</figcaption>
+      </figure>
+      <figure class="shot-card">
+        <div class="window sm">
+          <div class="window-bar"><i></i><i></i><i></i><span>Audit Catalog</span></div>
+          <div class="window-body list">
+            <div class="lrow"><span class="sev sev-crit">CRIT</span><span class="grow">CVE-2024-6387</span><span class="hot">92%</span></div>
+            <div class="lrow"><span class="sev sev-high">HIGH</span><span class="grow">CVE-2021-42013</span><span class="hot">71%</span></div>
+            <div class="lrow"><span class="sev sev-med">MED</span><span class="grow">CVE-2019-20372</span><span>9%</span></div>
+            <div class="lrow"><span class="sev sev-low">LOW</span><span class="grow">CVE-2018-15473</span><span>2%</span></div>
+          </div>
+        </div>
+        <figcaption>6,000+ browsable, enriched audit entries</figcaption>
+      </figure>
+      <figure class="shot-card">
+        <div class="window sm">
+          <div class="window-bar"><i></i><i></i><i></i><span>Scan · Changes</span></div>
+          <div class="window-body">
+            <div class="delta-cards">
+              <div class="dc dc-new"><div class="dc-n">12</div><div class="dc-l">New</div></div>
+              <div class="dc dc-reg"><div class="dc-n">2</div><div class="dc-l">Reg.</div></div>
+              <div class="dc dc-res"><div class="dc-n">31</div><div class="dc-l">Res.</div></div>
+            </div>
+          </div>
+        </div>
+        <figcaption>New / regressed / resolved between scans</figcaption>
+      </figure>
+    </div>
+    <p class="note">Mock-ups for illustration — drop real screenshots into <code>assets/</code> to replace them.</p>
+  </section>
+
+  <!-- ───────────────────────── Download ───────────────────────── -->
+  <section class="section download" id="download">
+    <div class="section-head">
+      <span class="eyebrow">Get started</span>
+      <h2>Download ShadowSecurityScanner</h2>
+      <p>Pick the build that fits you. Both are single, self-contained files — no installer required.</p>
+    </div>
+    <div class="dl-grid">
+      <div class="dl-card featured">
+        <div class="dl-badge">Recommended</div>
+        <h3>Native desktop app</h3>
+        <p>Runs in its own window via WebView2. The full experience.</p>
+        <a class="btn btn-primary btn-block" href="#" data-dl="desktop">Download for Windows (.exe)</a>
+        <ul class="dl-req">
+          <li>Windows 10/11 (x64)</li>
+          <li>WebView2 runtime — preinstalled on Win 11 &amp; current Win 10</li>
+          <li>~22 MB · no admin rights needed</li>
+        </ul>
+      </div>
+      <div class="dl-card">
+        <h3>Standalone (browser)</h3>
+        <p>Runs a local server and opens in your browser. Handy where WebView2 isn't available.</p>
+        <a class="btn btn-ghost btn-block" href="#" data-dl="standalone">Download standalone (.exe)</a>
+        <ul class="dl-req">
+          <li>Windows / macOS / Linux (x64)</li>
+          <li>Opens at <code>http://127.0.0.1:8088</code></li>
+          <li>~17 MB · single binary</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Building from source? <code>scripts/build-desktop.sh windows amd64</code> — see the repository README.</p>
+  </section>
+
+  <!-- ───────────────────────── FAQ ───────────────────────── -->
+  <section class="section" id="faq">
+    <div class="section-head"><span class="eyebrow">FAQ</span><h2>Good to know</h2></div>
+    <div class="faq">
+      <details>
+        <summary>Is it safe / legal to use?</summary>
+        <p>ShadowSecurityScanner is for <strong>authorized security testing</strong> only — scan systems you own or are explicitly permitted to assess. Denial-of-service tests are intentionally excluded.</p>
+      </details>
+      <details>
+        <summary>Where does my data live?</summary>
+        <p>Entirely on your machine. The app stores its database in your user profile (e.g. <code>%AppData%\ShadowSecurityScanner</code>). There is no telemetry and no cloud component.</p>
+      </details>
+      <details>
+        <summary>What are EPSS and KEV?</summary>
+        <p><strong>EPSS</strong> (FIRST.org) is the probability a CVE will be exploited in the next 30 days. <strong>KEV</strong> (CISA) is the catalog of vulnerabilities <em>known to be actively exploited</em>. Together they turn a flat list of findings into a real priority order.</p>
+      </details>
+      <details>
+        <summary>Does the catalog update automatically?</summary>
+        <p>Yes. The audit catalog refreshes from a signed update feed (CISA KEV daily, plus Nuclei and curated advisories), optionally enriched with CVSS/CWE from NVD and EPSS scores.</p>
+      </details>
+      <details>
+        <summary>Is it open source?</summary>
+        <p>Yes — released under the MIT License. Browse the code, build it yourself, or open an issue on GitHub.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Contact ───────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="contact-box">
+      <div class="contact-copy">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Questions, demos or enterprise support?</h2>
+        <p>We'd love to hear how you're using ShadowSecurityScanner. Reach out — we usually reply within a day.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="contact-link" href="mailto:eugene.kucherenko@greencandy.solutions">
+          <span class="ci">✉️</span>
+          <span><b>Email</b><br>eugene.kucherenko@greencandy.solutions</span>
+        </a>
+        <a class="contact-link" href="https://github.com/andriigordiienko/ShadowSecurityScanner" target="_blank" rel="noreferrer">
+          <span class="ci">🐙</span>
+          <span><b>GitHub</b><br>Source, issues &amp; releases</span>
+        </a>
+        <div class="contact-link static">
+          <span class="ci">🏢</span>
+          <span><b>GreenCandy Solutions</b><br>Security tooling &amp; research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Footer ───────────────────────── -->
+  <footer class="site-footer">
+    <div class="foot-brand">
+      <img src="assets/logo.svg" alt="" width="28" height="28" />
+      <span>ShadowSecurityScanner</span>
+    </div>
+    <nav class="foot-nav">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/andriigordiienko/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta">
+      <span>© <span id="year">2026</span> GreenCandy Solutions · MIT License</span>
+      <span class="muted">For authorized security testing only.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Smooth-scroll for in-page anchors.
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", e => {
+        const t = document.querySelector(a.getAttribute("href"));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: "smooth", block: "start" }); }
+      });
+    });
+    // Download buttons are placeholders until release assets are wired up.
+    document.querySelectorAll("[data-dl]").forEach(b => {
+      b.addEventListener("click", e => {
+        e.preventDefault();
+        alert("Release downloads will be published on the GitHub Releases page.\nFor now, build locally with scripts/build-desktop.sh.");
+      });
+    });
+  </script>
+</body>
+</html>

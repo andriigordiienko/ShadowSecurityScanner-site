@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10151f"/>
+      <stop offset="100%" stop-color="#090c12"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0c87c9"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded-square app tile -->
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <rect x="8" y="8" width="1008" height="1008" rx="216" fill="none" stroke="#1f2a3a" stroke-width="2"/>
+
+  <g filter="url(#glow)">
+    <!-- Right half filled (ShieldHalf brand mark) -->
+    <path d="M512 232 L792 332 L792 560 C792 678 668 768 512 804 Z" fill="url(#shield)" fill-opacity="0.92"/>
+    <!-- Left half subtle fill -->
+    <path d="M512 232 L232 332 L232 560 C232 678 356 768 512 804 Z" fill="#38bdf8" fill-opacity="0.12"/>
+    <!-- Shield outline -->
+    <path d="M512 232 L792 332 L792 560 C792 678 668 768 512 804 C356 768 232 678 232 560 L232 332 Z"
+          fill="none" stroke="#7dd3fc" stroke-width="20" stroke-linejoin="round"/>
+    <!-- Verification check -->
+    <path d="M430 520 L494 584 L610 452" fill="none" stroke="#ffffff" stroke-width="34"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

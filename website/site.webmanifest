@@ -1,0 +1,13 @@
+{
+  "name": "ShadowSecurityScanner",
+  "short_name": "SSS",
+  "description": "Modern open-source network vulnerability scanner with EPSS/KEV exploit prioritisation.",
+  "start_url": "/ShadowSecurityScanner-site/",
+  "scope": "/ShadowSecurityScanner-site/",
+  "display": "standalone",
+  "background_color": "#0a0e16",
+  "theme_color": "#0a0e16",
+  "icons": [
+    { "src": "assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
