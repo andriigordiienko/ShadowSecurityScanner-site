@@ -56,7 +56,7 @@
         "description": "A fast, modern open-source network vulnerability scanner with service & OS fingerprinting, EPSS/KEV exploit prioritisation, scan diffing, a live audit catalog and SARIF/PDF reporting.",
         "url": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/",
         "downloadUrl": "https://github.com/andriigordiienko/ShadowSecurityScanner/releases",
-        "softwareVersion": "0.1.0",
+        "softwareVersion": "1.1.0",
         "image": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png",
         "license": "https://opensource.org/licenses/MIT",
         "isAccessibleForFree": true,
@@ -386,32 +386,42 @@
     <div class="section-head">
       <span class="eyebrow">Get started</span>
       <h2>Download ShadowSecurityScanner</h2>
-      <p>Pick the build that fits you. Both are single, self-contained files — no installer required.</p>
+      <p>Native desktop app for every platform — each a single, self-contained download, no installer required.</p>
     </div>
     <div class="dl-grid">
       <div class="dl-card featured">
         <div class="dl-badge">Recommended</div>
-        <h3>Native desktop app</h3>
+        <h3>Windows</h3>
         <p>Runs in its own window via WebView2. The full experience.</p>
-        <a class="btn btn-primary btn-block" href="#" data-dl="desktop">Download for Windows (.exe)</a>
+        <a class="btn btn-primary btn-block" href="https://github.com/andriigordiienko/ShadowSecurityScanner/releases/latest/download/ShadowSecurityScanner-windows-amd64.exe">Download for Windows (x64)</a>
         <ul class="dl-req">
-          <li>Windows 10/11 (x64)</li>
+          <li>Windows 10/11 · <a href="https://github.com/andriigordiienko/ShadowSecurityScanner/releases/latest/download/ShadowSecurityScanner-windows-arm64.exe">ARM64 build</a></li>
           <li>WebView2 runtime — preinstalled on Win 11 &amp; current Win 10</li>
-          <li>~22 MB · no admin rights needed</li>
+          <li>~24 MB · no admin rights needed</li>
         </ul>
       </div>
       <div class="dl-card">
-        <h3>Standalone (browser)</h3>
-        <p>Runs a local server and opens in your browser. Handy where WebView2 isn't available.</p>
-        <a class="btn btn-ghost btn-block" href="#" data-dl="standalone">Download standalone (.exe)</a>
+        <h3>macOS</h3>
+        <p>A signed-style <code>.app</code> bundle. Unzip and drag to Applications.</p>
+        <a class="btn btn-primary btn-block" href="https://github.com/andriigordiienko/ShadowSecurityScanner/releases/latest/download/ShadowSecurityScanner-macos-arm64.zip">Download for macOS (Apple Silicon)</a>
         <ul class="dl-req">
-          <li>Windows / macOS / Linux (x64)</li>
-          <li>Opens at <code>http://127.0.0.1:8088</code></li>
-          <li>~17 MB · single binary</li>
+          <li>macOS 11+ · Apple Silicon (arm64)</li>
+          <li>First launch: right-click → Open</li>
+          <li>~18 MB · single bundle</li>
+        </ul>
+      </div>
+      <div class="dl-card">
+        <h3>Linux</h3>
+        <p>Native window via WebKitGTK. Mark executable and run.</p>
+        <a class="btn btn-primary btn-block" href="https://github.com/andriigordiienko/ShadowSecurityScanner/releases/latest/download/ShadowSecurityScanner-linux-amd64">Download for Linux (x64)</a>
+        <ul class="dl-req">
+          <li>x64 · <a href="https://github.com/andriigordiienko/ShadowSecurityScanner/releases/latest/download/ShadowSecurityScanner-linux-arm64">ARM64 build</a></li>
+          <li>Needs <code>libwebkit2gtk-4.1</code> &amp; <code>libgtk-3</code></li>
+          <li><code>chmod +x</code> then run</li>
         </ul>
       </div>
     </div>
-    <p class="note">Building from source? <code>scripts/build-desktop.sh windows amd64</code> — see the repository README.</p>
+    <p class="note">All builds are published on the <a href="https://github.com/andriigordiienko/ShadowSecurityScanner/releases/latest">GitHub Releases page</a>. Building from source? <code>scripts/build-desktop.sh windows amd64</code> — see the repository README.</p>
   </section>
 
   <!-- ───────────────────────── FAQ ───────────────────────── -->
@@ -491,13 +501,6 @@
       a.addEventListener("click", e => {
         const t = document.querySelector(a.getAttribute("href"));
         if (t) { e.preventDefault(); t.scrollIntoView({ behavior: "smooth", block: "start" }); }
-      });
-    });
-    // Download buttons are placeholders until release assets are wired up.
-    document.querySelectorAll("[data-dl]").forEach(b => {
-      b.addEventListener("click", e => {
-        e.preventDefault();
-        alert("Release downloads will be published on the GitHub Releases page.\nFor now, build locally with scripts/build-desktop.sh.");
       });
     });
   </script>
