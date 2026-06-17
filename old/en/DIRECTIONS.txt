@@ -1,0 +1,309 @@
+DIRECTIONS:
+
+DIFFERENT CSS CLASSES HAVE BEEN ADDED -- ONCE THE DOC DECLARATION IS ADDED, THE LAYOUT FOR THE SITE BREAKS DOWN A LITTLE HERE AND THERE, PLUS THESE CLASSES MAKE IT SO THAT THE PAGE LOOKS SIMILAR IN ALL THE BROWSERS.
+--------------
+
+DIRECTIONS:
+UPLOAD FOLDER   "securityscanner"   AND UPLOAD CSS FILES INTO en/  FOLDER WITH THE STARTING PAGE --
+
+mstyle_sp.css, mstyle_sp_ie5.css, and styles_sp.css
+
+
+
+FOR THE STARTING PAGE -- UPLOAD THE FILE   "index2.htm"  -- this will be renamed the starting page once everything is tested.
+
+
+
+ALL CODE BELOW:::::::::
+These are all the changes to the starting page, these can be made by you, although I made the index2.htm file so that these changes won't have to be made >>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+ALL OF THE CODE AT THE TOP UNTIL THE CSS STYLE SECTION, REPLACE WITH THIS (THE CORRECT DOC DECLARATION HAS BEEN ADDED WHICH IS NECESSARY FOR CERTAIN CSS AND OTHER THINGS TO WORK, PLUS THE ENGINES LIKE IT. THE JS HAS BEEN ADDED AFTER THE META TAGS. THE   &amp   HAS BEEN ADDED IN THE TITLE. THE CSS LINKS FOR THE NEW CSS SHEETS HAVE BEEN ADDED).
+
+--------------------------------------------------------------------------------
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<!-- add amp to ampersand in title -->
+<TITLE>Network Security Scanner &amp; Database Security Scanner &amp; Online Security Scanner</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.5730.11" name=GENERATOR>
+<META 
+content="SafetyLab is a leading  network security scanner, database security scanner, online security scanner software developer." 
+name=Description>
+<META 
+content="security scanner, vulnerability scanner, network security scanner, database vulnerabilities, network security software, vulnerabilities security scanner" 
+name=Keywords>
+<META content=index,follow name=robots>
+<META content=index,follow name=googlebot>
+
+<SCRIPT Language="JavaScript">
+<!--
+document.write("<img src='/cnstats/cntg.php?r="+escape(document.referrer)+
+'&'+Math.random()+"' width=1 height=1 border=0>");
+// -->
+</SCRIPT>
+<NOSCRIPT><img src="/cnstats/cntg.php?r=nojs" width="1" height="1"
+border="0"></NOSCRIPT>
+
+<link href="styles_sp.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="mstyle_sp.css">
+<!--[if lte IE 5]><link rel="stylesheet" type="text/css" href="mstyle_sp_ie5.css" /><![endif]-->
+
+
+
+----------------------------------------------------------------------------------------
+
+
+
+FIND THE LINKS AT THE TOP OF THE PAGE ON THE RIGHT -- AT THE START OF THE LINKS, ADD THE "top1" CLASS IN THE TD BEFORE THE EVENTS LINK:
+
+
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+<!-- add top1 class -->
+                <TD class="top1" ><A href="http://www.safety-lab.com/en/events.htm"><IMG 
+                  src="images/news.gif" alt="" border=0></A><!--
+                 --><A 
+                  href="http://www.safety-lab.com/en/about2.htm"><IMG 
+                  src="images/about.gif" alt="" border=0></A><!--
+                 --><
+
+
+---------------------------------------------------------------------------------------------
+
+
+FIND THE LINKS FOR THE LEFT NAVIGATION, ADD THE "left1" CLASS IN THE TD BEFORE THE NEWS LINK:
+
+
+<!-- add left1 class  -->
+          <TD class="left1" vAlign=top width=62 background=images/menu_bg.gif><BR>&nbsp;<A 
+            style="FONT-WEIGHT: normal; FONT-SIZE: 9px; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" 
+            href="http://www.safety-lab.com/en/events.htm"><B>NEWS</B></A> 
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+ADD THE A-Z LINK WHICH LINKS TO ALL THE OPTIMIZED PAGES  -- FIND THE END OF THE LEFT NAVI LINKS AND PUT CODE RIGHT AFTER THE </A> TAG FOR DATABASE:
+
+href="http://www.safety-lab.com/audits/categorylist.pl?lang=en"><B>DATABASE</B></A>
+
+
+ADD ALL OF THIS CODE:
+
+
+
+
+
+
+<div class="menu1"><ul>
+<li><a class="drop" href="#">A-Z
+<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table>
+<tr><td><![endif]--><ul>
+<li><a title="database protection" href="../securityscanner/database_protection/default.htm">database protection<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/database_assessment_scanner/default.htm" title="database assessment scanner">database assessment scanner</a></li><li><a href="../securityscanner/database_internet_network_security/default.htm" title="database internet network security">database internet network security</a></li><li><a href="../securityscanner/database_security_scanners/default.htm" title="database security scanners">database security scanners</a></li><li><a href="../securityscanner/sql_server_security/default.htm" title="sql server security">sql server security</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="database scanner" href="../securityscanner/database_scanner/default.htm">database scanner<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/database_management_system_security/default.htm" title="database management system security">database management system security</a></li><li><a href="../securityscanner/database_security_scanner/default.htm" title="database security scanner">database security scanner</a></li><li><a href="../securityscanner/protection_database/default.htm" title="protection database">protection database</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="computer system security" href="../securityscanner/computer_system_security/default.htm">computer system security<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/best_network_security_scanner/default.htm" title="best network security scanner">best network security scanner</a></li><li><a href="../securityscanner/computer_security_and_vulnerability_scanner/default.htm" title="computer security and vulnerability scanner">computer security and vulnerability scanner</a></li><li><a href="../securityscanner/network_security_audit_software/default.htm" title="network security audit software">network security audit software</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="im sniffer" href="../securityscanner/im_sniffer/default.htm">im sniffer<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/instant_messaging_security/default.htm" title="instant messaging security">instant messaging security</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="security scanner" href="../securityscanner/security_scanner/default.htm">security scanner<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/it_security_audit/default.htm" title="it security audit">it security audit</a></li><li><a href="../securityscanner/computer_security_scanner_network/default.htm" title="computer security scanner network">computer security scanner network</a></li><li><a href="../securityscanner/network_scanner_security_software/default.htm" title="network scanner security software">network scanner security software</a></li><li><a href="../securityscanner/data_theft_protection/default.htm" title="data theft protection">data theft protection</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="vulnerability scanner" href="../securityscanner/vulnerability_scanner/default.htm">vulnerability scanner<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/computer_system_network_security/default.htm" title="computer system network security">computer system network security</a></li><li><a href="../securityscanner/network_vulnerability_scanner/default.htm" title="network vulnerability scanner">network vulnerability scanner</a></li><li><a href="../securityscanner/scanner_network_security/default.htm" title="scanner network security">scanner network security</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="database security" href="../securityscanner/database_security/default.htm">database security<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/sql_server_2005_security/default.htm" title="sql server 2005 security">sql server 2005 security</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="network scanner security" href="../securityscanner/network_scanner_security/default.htm">network scanner security<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/network_scanner_vulnerability/default.htm" title="network scanner vulnerability">network scanner vulnerability</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="network security consulting" href="../securityscanner/network_security_consulting/default.htm">network security consulting<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/business_internet_security_software/default.htm" title="business internet security software">business internet security software</a></li><li><a href="../securityscanner/security_scanners/default.htm" title="security scanners">security scanners</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="database security software" href="../securityscanner/database_security_software/default.htm">database security software<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/sql_security/default.htm" title="sql security">sql security</a></li><li><a href="../securityscanner/database_vulnerability_scanner/default.htm" title="database vulnerability scanner">database vulnerability scanner</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="network sniffer" href="../securityscanner/network_sniffer/default.htm">network sniffer<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/instant_message_sniffer/default.htm" title="instant message sniffer">instant message sniffer</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a title="internet security scanner" href="../securityscanner/internet_security_scanner/default.htm">internet security scanner<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul>
+<li><a href="../securityscanner/vulnerability_assessment_scanner/default.htm" title="vulnerability assessment scanner">vulnerability assessment scanner</a></li><li><a href="../securityscanner/company_internet_security_software/default.htm" title="company internet security software">company internet security software</a></li><li><a href="../securityscanner/network_security_scanner/default.htm" title="network security scanner">network security scanner</a></li><li><a href="../securityscanner/network_vulnerability_scanners/default.htm" title="network vulnerability scanners">network vulnerability scanners</a></li>	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+</ul><!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+</ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+FIND THE RIGHT HAND BLUE BOX WITH THE "OUR PRODUCTS" LINKS --  THIS IS THE ACTUAL CODE:
+
+<td width="156" align="right" valign="top" rowspan="2" >
+
+                  <!-- НАЧАЛО: правая колонка с последними продуктами, апдейтами и голосованием -->                  <table cellpadding="0" cellspacing="0" border="0" width="156" >
+                     <tr>
+                        <td width="156"  ><!--
+                        --><img src="/en/images/prod_head.jpg" width="156" alt="Network Security Scanner & Database Security Scanner" /><!--
+                     --></td>
+                     </tr>
+
+                     <tr>
+                        <td width="156" valign="top" background="/en/images/right_bg.gif" >
+                           
+							&nbsp;&nbsp;&nbsp;<a href="/en/products/securityscanner.htm">SECURITY SCANNER</a><br /> 
+
+
+							&nbsp;&nbsp;&nbsp;<a href="/en/products/6.htm">DATABASE SCANNER</a> <br />
+
+							&nbsp;&nbsp;&nbsp;<a href="/en/products/7.htm">WEB ANALYZER</a><br />
+
+
+							&nbsp;&nbsp;&nbsp;<a href="/en/products/imsniffer.htm">IM SNIFFER</a><br />
+
+-----------------------------------------------------------
+
+
+
+NOW REMOVE THE   align="right"  AT THE BEGINNING.  ADD CLASS   "right1"    AFTER TD BEFORE THE SECURITY SCANNER LINK  --  ALL THE CODE SHOULD LOOK LIKE THIS:
+
+
+<!--  take out align right -->					 
+					 
+          <TD  vAlign=top  width=156 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=156 border=0>
+              <TBODY>
+              <TR>
+                <TD  width=156><!--
+                        --><IMG 
+                  alt="Network Security Scanner &amp; Database Security Scanner" 
+                  src="images/prod_head.jpg" width=156><!--
+                     --></TD></TR>
+              <TR>
+			  
+<!-- add class right1  -->
+                <TD class="right1" vAlign=top width=156 
+                  background=images/right_bg.gif>&nbsp;&nbsp;&nbsp;<A 
+                  href="http://www.safety-lab.com/en/products/securityscanner.htm">SECURITY 
+                  SCANNER</A><BR>&nbsp;&nbsp;&nbsp;<A 
+
+
+
+------------------------------
+
+
+ADD CLASS "right1" IN THE TD HERE:
+
+<!-- add class right1  -->
+                <TD class="right1" vAlign=top width=156 
+                  background=images/right_bg.gif>&nbsp;&nbsp;&nbsp;<A 
+                  href="http://www.safety-lab.com/LangSDK.zip">LANGUAGE 
+                  SDK</A><BR>&nbsp;&nbsp;&nbsp;<A 
+
+
+---------------------------------
+
+ADD CLASS "rightimg1" IN THE TD HERE:
+
+
+<!-- add class rightimg1  -->
+                <TD class="rightimg1" align=center width=86 background=images/right_bg.gif 
+                height=40><IMG height=40 
+                  alt="Network Security Scanner &amp; Database Security Scanner" 
+                  src="images/final.gif" width=140> </TD></TR>
+
+------------------------------------------------
+
+
+
+NOW FIND THE COPYRIGHT TEXT AT THE BOTTOM  --  THIS CODE:
+
+<td
+         width="100%"
+         height="62"
+         align="right"
+         valign="top"
+         
+      background="images/bot_bg.gif"><!--
+      --><table cellpadding="0" cellspacing="0" border="0" width="300" >
+
+--------------------------------------
+CHANGE IT TO THIS (ADD CLASS BOTT IN TD AND REMOVE IMAGE (it's been added to the css sheet):
+
+<TD class="bott"   width="100%" height=62 align=right vAlign=top>
+    
+      <TABLE cellSpacing=0 cellPadding=0 width=300 border=0>
+
+
+
+
+

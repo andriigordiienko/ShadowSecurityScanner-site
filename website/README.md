@@ -72,5 +72,5 @@ work too (all serve the same static files):
 - **Download links** — the buttons currently show a placeholder. Point the
   `data-dl` buttons at your GitHub Releases assets once published.
 - **Contact** — email and company are in the `#contact` section; the GitHub URL
-  appears throughout (`andriigordiienko/ShadowSecurityScanner`).
+  appears throughout (`andriigordiienko/SSS`).
 - **Colours** — tweak the `:root` variables at the top of `styles.css`.

@@ -1,0 +1,21 @@
+.top1 {
+padding-right:36px;
+}
+.left1 {
+text-align:left;   /*  */
+line-height:150%;
+}
+
+.right1 {
+text-align:left;
+padding-left:3px;
+line-height:150%;
+}
+.rightimg1 {
+padding-left:7px;
+line-height:150%;
+}
+.bott {
+background-image:url(images/bot_bg.gif);
+background-repeat:repeat-x;
+}
