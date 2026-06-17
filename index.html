@@ -133,6 +133,7 @@
       <a href="#prioritise">Prioritisation</a>
       <a href="#reports">Reports</a>
       <a href="#screens">Screens</a>
+      <a href="#heritage">Heritage</a>
       <a href="#download">Download</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -243,6 +244,32 @@
         <p>A single self-contained binary with its own window. No cloud, no agents, no database server — your data stays on your machine.</p>
       </article>
     </div>
+
+    <!-- Protocol / service coverage -->
+    <div class="section-head" style="margin-top:64px;margin-bottom:28px">
+      <span class="eyebrow">Coverage</span>
+      <h2>Probes for the protocols that matter</h2>
+      <p>The original SSS made its name auditing services other scanners only port-knocked. That breadth lives on — each service has dedicated detection and version-aware checks.</p>
+    </div>
+    <div class="protos">
+      <span class="proto">HTTP / HTTPS</span>
+      <span class="proto">TLS / SSL</span>
+      <span class="proto">SSH</span>
+      <span class="proto">FTP</span>
+      <span class="proto">SMTP</span>
+      <span class="proto">POP3</span>
+      <span class="proto">IMAP</span>
+      <span class="proto">DNS</span>
+      <span class="proto">SMB / NetBIOS</span>
+      <span class="proto">NFS</span>
+      <span class="proto">LDAP</span>
+      <span class="proto">SNMP</span>
+      <span class="proto">NNTP</span>
+      <span class="proto">Telnet</span>
+      <span class="proto">Finger</span>
+      <span class="proto">TCP / UDP <small>port &amp; service scan</small></span>
+    </div>
+    <p class="coverage-note">Cross-platform by design: targets running Windows, Linux, the BSDs, Solaris and network appliances are all in scope — the scanner runs natively on Windows, macOS and Linux.</p>
   </section>
 
   <!-- ───────────────────────── Prioritisation deep-dive ───────────────────────── -->
@@ -379,6 +406,63 @@
       </figure>
     </div>
     <p class="note">Mock-ups for illustration — drop real screenshots into <code>assets/</code> to replace them.</p>
+  </section>
+
+  <!-- ───────────────────────── Heritage ───────────────────────── -->
+  <section class="heritage" id="heritage">
+    <div class="section split" style="padding-top:clamp(56px,8vw,96px)">
+      <div class="split-copy">
+        <span class="eyebrow">Heritage</span>
+        <h2>Two decades in the making. <span class="grad">Reborn open-source.</span></h2>
+        <p>
+          Shadow Security Scanner began life in the early 2000s at <strong>Safety-Lab</strong> as a
+          Windows-native vulnerability assessment scanner. It earned a reputation as one of the
+          fastest scanners of its era — built around a proprietary <em>"intellectual core"</em>, with
+          a catalog of <strong>5,000+ audits</strong> and the rare ability to actually audit proxy and
+          LDAP servers rather than just check whether a port was open.
+        </p>
+        <p>
+          ShadowSecurityScanner is its <strong>clean-room successor</strong>: the same mission, rebuilt
+          from scratch in Go and React as a cross-platform, open-source desktop app. The legacy audit
+          corpus carries forward — its checks were re-derived into today's catalog and enriched with
+          modern signals like EPSS and CISA KEV.
+        </p>
+      </div>
+      <div class="split-shot">
+        <div class="window legacy-win">
+          <div class="window-bar"><i></i><i></i><i></i><span>Safety-Lab · Shadow Security Scanner</span></div>
+          <div class="window-body">
+            <div class="legacy-meta">
+              <div class="lm"><b>2000s</b><span>Windows-native, ActiveX-extensible scanner with a daily-updated audit base</span></div>
+              <div class="lm"><b>5,000+</b><span>audits — the corpus re-derived into today's catalog</span></div>
+              <div class="lm"><b>20+</b><span>protocols audited, incl. proxy &amp; LDAP servers</span></div>
+              <div class="lm"><b>HTML·XML</b><span>·PDF·RTF·CHM reports — now PDF·HTML·SARIF·XML·CSV</span></div>
+              <div class="lm"><b>Today</b><span>open-source · cross-platform · exploit-aware</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" style="padding-top:0">
+      <p class="clients-head">The original Shadow Security Scanner was used by security teams at</p>
+      <div class="clients">
+        <span class="client">Lockheed Martin</span>
+        <span class="client">Deutsche Telekom</span>
+        <span class="client">Telecom Italia</span>
+        <span class="client">Accenture</span>
+        <span class="client">KPMG</span>
+        <span class="client">Ernst &amp; Young</span>
+        <span class="client">PricewaterhouseCoopers</span>
+        <span class="client">Trend Micro</span>
+        <span class="client">ING Group</span>
+        <span class="client">Shell Oil</span>
+        <span class="client">KDDI</span>
+        <span class="client">SwissSign</span>
+        <span class="client">Mississippi State University</span>
+        <span class="client">U.S. Department of Education</span>
+      </div>
+      <p class="coverage-note">A selection from the original product's published client list — shown to credit the tool's lineage, not as an endorsement of this open-source successor.</p>
+    </div>
   </section>
 
   <!-- ───────────────────────── Download ───────────────────────── -->
