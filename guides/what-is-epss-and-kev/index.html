@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What Are EPSS and CISA KEV? Exploit-Aware Vulnerability Prioritisation Explained | ShadowSecurityScanner</title>
+  <meta name="description" content="EPSS and CISA KEV explained: how exploit-probability scoring and the known-exploited vulnerabilities catalog turn a flat CVE list into a real fix-first order — and why CVSS alone isn't enough." />
+  <meta name="keywords" content="what is EPSS, what is CISA KEV, EPSS vs CVSS, exploit prediction scoring system, known exploited vulnerabilities, vulnerability prioritization" />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="ShadowSecurityScanner" />
+  <meta property="og:title" content="What Are EPSS and CISA KEV? Exploit-Aware Prioritisation Explained" />
+  <meta property="og:description" content="How EPSS and CISA KEV turn a flat CVE list into a real fix-first order — and why CVSS alone isn't enough." />
+  <meta property="og:url" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/" />
+  <meta property="og:image" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "What are EPSS and CISA KEV? Exploit-aware vulnerability prioritisation explained",
+        "description": "How EPSS exploit-probability scoring and the CISA KEV catalog turn a flat CVE list into a real fix-first order.",
+        "author": { "@type": "Person", "name": "AndriiGordiienko" },
+        "image": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png",
+        "mainEntityOfPage": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is EPSS?", "acceptedAnswer": { "@type": "Answer", "text": "EPSS (Exploit Prediction Scoring System), maintained by FIRST.org, is a daily-updated score from 0 to 1 estimating the probability that a given CVE will be exploited in the wild within the next 30 days." } },
+          { "@type": "Question", "name": "What is the CISA KEV catalog?", "acceptedAnswer": { "@type": "Answer", "text": "The CISA Known Exploited Vulnerabilities (KEV) catalog is an authoritative list of vulnerabilities that are confirmed to be actively exploited in the wild. If a CVE is in KEV, it is being used by attackers right now." } },
+          { "@type": "Question", "name": "EPSS vs CVSS — what's the difference?", "acceptedAnswer": { "@type": "Answer", "text": "CVSS measures how severe a vulnerability is if exploited; EPSS estimates how likely it is to be exploited. Combining severity (CVSS) with likelihood (EPSS) and confirmed exploitation (KEV) produces a far better fix-first order than CVSS alone." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/" },
+          { "@type": "ListItem", "position": 3, "name": "What are EPSS and CISA KEV", "item": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="ShadowSecurityScanner home">
+      <img src="../../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../">Guides</a>
+      <a class="btn btn-primary" href="../../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span>/</span><a href="../">Guides</a><span>/</span>EPSS &amp; KEV explained</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">Guide</span>
+      <h1>What are EPSS and CISA KEV?</h1>
+      <p class="meta">Exploit-aware vulnerability prioritisation explained · 2026</p>
+    </div>
+
+    <p>
+      Most scanners hand you a long list of CVEs sorted by <strong>CVSS severity</strong>. The problem:
+      severity tells you <em>how bad</em> a vulnerability would be if exploited — not <em>how likely</em>
+      it is to be exploited at all. <strong>EPSS</strong> and <strong>CISA KEV</strong> fill that gap.
+    </p>
+
+    <h2>EPSS — the Exploit Prediction Scoring System</h2>
+    <p>
+      <strong>EPSS</strong>, maintained by <a href="https://www.first.org/epss/" target="_blank" rel="noreferrer">FIRST.org</a>,
+      is a model that produces a daily score between 0 and 1 estimating the probability a given CVE will be
+      <strong>exploited in the wild within the next 30 days</strong>. An EPSS of 0.97 means a finding is
+      almost certain to be attacked soon; 0.02 means it's very unlikely. It's data-driven and updated daily.
+    </p>
+
+    <h2>CISA KEV — Known Exploited Vulnerabilities</h2>
+    <p>
+      The <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noreferrer">CISA
+      Known Exploited Vulnerabilities catalog</a> is an authoritative list of CVEs confirmed to be
+      <strong>actively exploited right now</strong>. If a vulnerability is in KEV, it isn't theoretical —
+      attackers are using it in the real world, and it belongs at the top of your queue.
+    </p>
+
+    <h2>EPSS vs CVSS — why you need both</h2>
+    <p>
+      Think of it as two axes: <strong>CVSS = impact</strong>, <strong>EPSS = likelihood</strong>. A CVSS 9.8
+      that nobody exploits can often wait; a CVSS 7 with a high EPSS or a KEV flag cannot. The strongest
+      fix-first order combines all three signals:
+    </p>
+    <ul>
+      <li><strong>KEV first</strong> — confirmed active exploitation</li>
+      <li><strong>then EPSS</strong> — highest exploit probability</li>
+      <li><strong>then severity</strong> — CVSS as the tie-breaker</li>
+    </ul>
+
+    <h2>How ShadowSecurityScanner uses them</h2>
+    <p>
+      <strong>ShadowSecurityScanner</strong> folds EPSS and KEV onto every finding automatically, sorts by
+      that KEV → EPSS → severity order, and carries the signals through to exports (including SARIF). A
+      dashboard "fix first" widget surfaces the most exploitable open issues, so triage takes seconds.
+      Ready to try it? <a href="../how-to-run-a-network-vulnerability-scan/">See how to run a scan →</a>
+    </p>
+
+    <div class="cta-band">
+      <h2 style="margin-top:0">See exploit-aware scanning in action</h2>
+      <p>Free and open-source, with EPSS and CISA KEV built in.</p>
+      <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../../">Home</a>
+      <a href="../">Guides</a>
+      <a href="../../compare/">Comparison</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

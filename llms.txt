@@ -42,3 +42,10 @@ For authorized security testing only — users should scan only systems they own
 - [Website](https://andriigordiienko.github.io/ShadowSecurityScanner-site/)
 - [Source code (GitHub)](https://github.com/safetylab/ShadowSecurityScanner)
 - [Latest release / download](https://github.com/safetylab/ShadowSecurityScanner/releases/latest)
+
+## Guides & comparisons
+
+- [ShadowSecurityScanner vs Nessus vs OpenVAS](https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/) — free/open-source scanner comparison.
+- [How to run a network vulnerability scan](https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/how-to-run-a-network-vulnerability-scan/) — step-by-step walkthrough.
+- [What are EPSS and CISA KEV?](https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/) — exploit-aware prioritisation explained.
+- [Best free open-source penetration testing tools](https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/best-free-penetration-testing-tools/) — practical roundup.

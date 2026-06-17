@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShadowSecurityScanner vs Nessus vs OpenVAS — Free Open-Source Scanner Comparison (2026)</title>
+  <meta name="description" content="A detailed comparison of ShadowSecurityScanner, Nessus and OpenVAS: licensing, price, deployment, EPSS/KEV exploit prioritisation, scan diffing and reporting. Which free, open-source vulnerability scanner should you use?" />
+  <meta name="keywords" content="Nessus alternative, OpenVAS alternative, free vulnerability scanner comparison, ShadowSecurityScanner vs Nessus, open source network scanner, best vulnerability scanner 2026" />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="ShadowSecurityScanner" />
+  <meta property="og:title" content="ShadowSecurityScanner vs Nessus vs OpenVAS — Scanner Comparison" />
+  <meta property="og:description" content="Licensing, price, deployment, EPSS/KEV prioritisation, scan diffing and reporting compared across three vulnerability scanners." />
+  <meta property="og:url" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/" />
+  <meta property="og:image" content="https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "headline": "ShadowSecurityScanner vs Nessus vs OpenVAS: free open-source scanner comparison",
+        "description": "A detailed comparison of ShadowSecurityScanner, Nessus and OpenVAS across licensing, price, deployment, exploit prioritisation and reporting.",
+        "author": { "@type": "Person", "name": "AndriiGordiienko" },
+        "image": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png",
+        "mainEntityOfPage": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/" },
+          { "@type": "ListItem", "position": 2, "name": "Comparison", "item": "https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="ShadowSecurityScanner home">
+      <img src="../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../guides/">Guides</a>
+      <a class="btn btn-primary" href="../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="../">Home</a><span>/</span>Comparison
+  </nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">Comparison</span>
+      <h1>ShadowSecurityScanner vs Nessus vs OpenVAS</h1>
+      <p class="meta">Free &amp; open-source vulnerability scanner comparison · updated 2026</p>
+    </div>
+
+    <p>
+      Choosing a <strong>network vulnerability scanner</strong> usually comes down to three popular
+      options: the commercial <strong>Nessus</strong>, the open-source <strong>OpenVAS / GVM</strong>,
+      and <strong>ShadowSecurityScanner</strong> — a free, MIT-licensed penetration testing tool that
+      runs as a single desktop app. This page compares them across the criteria that matter most.
+    </p>
+
+    <div class="table-wrap" style="margin:24px 0">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">Capability</th><th scope="col">ShadowSecurityScanner</th><th scope="col">Nessus</th><th scope="col">OpenVAS / GVM</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">License</th><td class="yes">Open source (MIT)</td><td>Proprietary</td><td>Open source (GPL)</td></tr>
+          <tr><th scope="row">Price</th><td class="yes">Free</td><td>Free tier (16 IPs) / paid Pro</td><td>Free</td></tr>
+          <tr><th scope="row">Deployment</th><td class="yes">Single desktop binary</td><td>Local service + web UI</td><td>Server stack (feeds, scanner, GSA)</td></tr>
+          <tr><th scope="row">Setup time</th><td class="yes">Seconds (download &amp; run)</td><td>Minutes</td><td>Longer (multi-component)</td></tr>
+          <tr><th scope="row">Cloud / telemetry</th><td class="yes">None — fully offline</td><td>Account &amp; activation</td><td>Self-hosted</td></tr>
+          <tr><th scope="row">EPSS exploit scoring</th><td class="yes">Built in</td><td>Partial</td><td>No</td></tr>
+          <tr><th scope="row">CISA KEV flagging</th><td class="yes">Built in</td><td>Partial</td><td>No</td></tr>
+          <tr><th scope="row">Scan diffing</th><td class="yes">New / regressed / resolved</td><td>Limited</td><td>Limited</td></tr>
+          <tr><th scope="row">SARIF export</th><td class="yes">Yes</td><td>No</td><td>No</td></tr>
+          <tr><th scope="row">Platforms</th><td class="yes">Windows · macOS · Linux</td><td>Windows · macOS · Linux</td><td>Linux</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>When to choose ShadowSecurityScanner</h2>
+    <p>
+      Pick ShadowSecurityScanner if you want a <strong>zero-setup, privacy-first scanner</strong> that
+      you can download and run immediately, with no server to maintain and no data leaving your machine.
+      Its standout feature is <strong>exploit-aware prioritisation</strong>: findings are ranked by
+      FIRST.org EPSS probability and CISA KEV status, so you fix what attackers actually exploit first.
+      It's a strong fit for individual pentesters, small teams, consultants and anyone who wants a
+      genuinely free, open-source tool.
+    </p>
+
+    <h2>When to choose Nessus</h2>
+    <p>
+      Nessus is a mature commercial scanner with a very large plugin library and enterprise features
+      (compliance auditing, credentialed scans at scale, support contracts). Its free "Essentials" tier
+      is capped at 16 IP addresses, and the full product is a paid subscription. Choose it when you need
+      vendor support and broad compliance coverage and have the budget.
+    </p>
+
+    <h2>When to choose OpenVAS / GVM</h2>
+    <p>
+      OpenVAS (part of Greenbone's GVM) is a capable, fully open-source scanner with a large feed of
+      network vulnerability tests. It runs as a multi-component server stack on Linux, which gives
+      flexibility but takes more effort to deploy and maintain. Choose it when you want an always-on,
+      Linux-hosted scanning server and don't mind the setup.
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li><strong>Fastest to start &amp; most private:</strong> ShadowSecurityScanner — one binary, no cloud.</li>
+      <li><strong>Best exploit prioritisation out of the box:</strong> ShadowSecurityScanner (EPSS + KEV built in).</li>
+      <li><strong>Most enterprise features &amp; support:</strong> Nessus (paid).</li>
+      <li><strong>Always-on Linux server scanning:</strong> OpenVAS / GVM.</li>
+    </ul>
+
+    <div class="cta-band">
+      <h2 style="margin-top:0">Try the free, open-source option</h2>
+      <p>Download ShadowSecurityScanner for Windows, macOS or Linux — a single binary, no installer.</p>
+      <a class="btn btn-primary btn-lg" href="../#download">Download ShadowSecurityScanner</a>
+    </div>
+
+    <p class="coverage-note" style="margin-top:28px">Comparison reflects publicly documented features at the time of writing and is for orientation only; verify current capabilities with each vendor. Nessus is a trademark of Tenable; OpenVAS/GVM are projects of Greenbone. Product names belong to their respective owners.</p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../">Home</a>
+      <a href="../guides/">Guides</a>
+      <a href="../#download">Download</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

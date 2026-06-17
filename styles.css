@@ -311,3 +311,31 @@ a.contact-link:hover { border-color: hsl(199 89% 52% / .5); }
 .cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: none; }
 .cmp td.yes { color: var(--res); font-weight: 600; }
 .cmp tbody tr:hover { background: hsl(199 89% 52% / .04); }
+
+/* ── Article / guide pages ── */
+.breadcrumbs { max-width: var(--maxw); margin: 0 auto; padding: 18px 24px 0; font-size: 13px; color: var(--muted); }
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--fg); }
+.breadcrumbs span { color: var(--border); margin: 0 6px; }
+.article { max-width: 760px; margin: 0 auto; padding: 28px 24px 72px; }
+.article-head { margin-bottom: 28px; }
+.article-head .eyebrow { color: var(--primary); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; }
+.article h1 { font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 10px 0 14px; }
+.article .meta { color: var(--muted); font-size: 13px; }
+.article h2 { font-size: clamp(22px, 3vw, 28px); margin: 38px 0 14px; }
+.article h3 { font-size: 19px; margin: 26px 0 10px; }
+.article p, .article li { color: var(--muted); font-size: 16.5px; line-height: 1.75; }
+.article p { margin: 0 0 16px; }
+.article strong { color: var(--fg); }
+.article a { color: var(--primary); text-decoration: none; border-bottom: 1px solid hsl(199 89% 52% / .35); }
+.article a:hover { border-bottom-color: var(--primary); }
+.article ul, .article ol { margin: 0 0 18px; padding-left: 22px; }
+.article li { margin: 0 0 8px; }
+.article code { background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; font-size: 14px; }
+.article .callout { border: 1px solid var(--border); border-left: 3px solid var(--primary); background: var(--surface); border-radius: 10px; padding: 16px 18px; margin: 0 0 20px; }
+.article .callout p:last-child { margin: 0; }
+.guide-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; max-width: var(--maxw); margin: 0 auto; }
+.guide-cards a.card { text-decoration: none; color: inherit; display: block; }
+.guide-cards a.card:hover { border-color: hsl(199 89% 52% / .5); }
+.guide-cards h3 { margin: 0 0 8px; }
+.cta-band { max-width: 760px; margin: 40px auto 0; text-align: center; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); padding: 28px 24px; }

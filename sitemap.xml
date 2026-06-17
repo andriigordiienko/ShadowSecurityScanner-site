@@ -12,4 +12,34 @@
       <image:caption>Free open-source penetration testing tool and network vulnerability scanner with EPSS/KEV exploit-aware prioritisation.</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/how-to-run-a-network-vulnerability-scan/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/best-free-penetration-testing-tools/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
