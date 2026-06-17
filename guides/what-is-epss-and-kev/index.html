@@ -106,6 +106,46 @@
       <li><strong>then severity</strong> — CVSS as the tie-breaker</li>
     </ul>
 
+    <h3>A worked example</h3>
+    <p>
+      Imagine a scan returns four findings. Sorting by CVSS alone would put the two 9.8s on top — but
+      that's not where the real risk is:
+    </p>
+    <div class="table-wrap" style="margin:0 0 20px">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">Finding</th><th scope="col">CVSS</th><th scope="col">EPSS</th><th scope="col">KEV?</th><th scope="col">Fix-first rank</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">SMBv1 RCE (MS17-010)</th><td>9.3</td><td>0.97</td><td class="yes">Yes</td><td class="yes">1</td></tr>
+          <tr><th scope="row">OpenSSH regreSSHion</th><td>8.1</td><td>0.92</td><td class="yes">Yes</td><td class="yes">2</td></tr>
+          <tr><th scope="row">Obscure parser bug</th><td>9.8</td><td>0.04</td><td>No</td><td>3</td></tr>
+          <tr><th scope="row">Weak TLS ciphers</th><td>5.3</td><td>0.03</td><td>No</td><td>4</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      The CVSS 9.8 parser bug drops below two lower-CVSS issues because almost nobody is exploiting it,
+      while the KEV-flagged SMBv1 and OpenSSH bugs are being actively weaponised. That re-ordering is the
+      entire point of exploit-aware prioritisation.
+    </p>
+
+    <h2>How often is EPSS updated, and what's a good threshold?</h2>
+    <p>
+      EPSS scores are <strong>recalculated daily</strong>, so a CVE that's quiet today can climb sharply once
+      a public exploit appears. There's no universal cutoff, but many teams treat <strong>EPSS ≥ 0.1</strong>
+      (a 10%+ chance of exploitation in 30 days) as "act soon", and anything in <strong>CISA KEV</strong> as
+      "act now regardless of score". Tune the threshold to your risk tolerance and patching capacity.
+    </p>
+
+    <h2>Common prioritisation mistakes</h2>
+    <ul>
+      <li><strong>Ranking by CVSS alone</strong> — treats every high-severity CVE as equally urgent, flooding the queue.</li>
+      <li><strong>Ignoring KEV</strong> — KEV entries are confirmed real-world attacks; they should never sit in a backlog.</li>
+      <li><strong>Treating EPSS as static</strong> — re-pull scores regularly; exploitation likelihood changes daily.</li>
+      <li><strong>Using likelihood without impact</strong> — EPSS tells you <em>if</em>, CVSS tells you <em>how bad</em>. Use both.</li>
+    </ul>
+
     <h2>How ShadowSecurityScanner uses them</h2>
     <p>
       <strong>ShadowSecurityScanner</strong> folds EPSS and KEV onto every finding automatically, sorts by
@@ -119,6 +159,13 @@
       <p>Free and open-source, with EPSS and CISA KEV built in.</p>
       <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
     </div>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="../how-to-run-a-network-vulnerability-scan/">How to run a network vulnerability scan</a> — put EPSS/KEV prioritisation into practice.</li>
+      <li><a href="../best-free-penetration-testing-tools/">Best free open-source penetration testing tools</a>.</li>
+      <li><a href="../../compare/">ShadowSecurityScanner vs Nessus vs OpenVAS</a>.</li>
+    </ul>
   </article>
 
   <footer class="site-footer">
