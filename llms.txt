@@ -1,0 +1,44 @@
+# ShadowSecurityScanner
+
+> ShadowSecurityScanner is a free, open-source (MIT) penetration testing tool and network vulnerability scanner. It runs as a single native desktop app on Windows, macOS and Linux — no cloud, no agents, no telemetry. It performs port scanning, service and OS fingerprinting, and thousands of active network and web-application security checks, then ranks every finding by real-world exploit probability using FIRST.org EPSS and the CISA Known Exploited Vulnerabilities (KEV) catalog. It is a privacy-first, self-hosted alternative to Nessus and OpenVAS.
+
+## Key facts
+
+- **Name:** ShadowSecurityScanner (also "Shadow Security Scanner", "SSS")
+- **Category:** Penetration testing tool / network vulnerability scanner
+- **License:** MIT (open source, free)
+- **Platforms:** Windows 10/11, macOS 11+ (Apple Silicon), Linux (x64 / ARM64)
+- **Architecture:** Single self-contained desktop binary; data stored locally; no cloud, no telemetry
+- **Built with:** Go, React, Wails, SQLite (no CGO)
+- **Author/publisher:** AndriiGordiienko
+- **Source & releases:** https://github.com/safetylab/ShadowSecurityScanner
+- **Website:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/
+
+## What makes it distinctive
+
+- **Exploit-aware prioritisation:** Every finding carries an EPSS exploit-probability score and a CISA KEV "known-exploited" flag, sorted KEV → EPSS → severity, so users fix what attackers actually exploit first rather than ranking purely by CVSS.
+- **Service & OS fingerprinting:** Across HTTP, TLS, SSH, FTP, SMTP, POP3, IMAP, DNS, SMB/NetBIOS, NFS, LDAP, SNMP, NNTP, Telnet and Finger — including unauthenticated Windows version detection via the SMB2 NTLM challenge.
+- **Active web probes:** Thousands of CGI / web-application checks (legacy SSS corpus plus Nuclei templates), de-duplicated by path with soft-404 calibration to reduce false positives.
+- **Scan diffing:** Compares a scan to a target's prior state to show new, regressed and resolved findings.
+- **Live audit catalog:** 6,000+ browsable CVEs and checks, refreshed daily from a signed update feed (CISA KEV, Nuclei, curated advisories), enriched with CVSS/CWE from NVD and EPSS scores.
+- **Reporting:** Exports to PDF, HTML, SARIF (GitHub code scanning), XML and CSV.
+
+## Use cases
+
+- Authorized penetration testing and red-team reconnaissance
+- Routine internal network vulnerability scanning by sysadmins and IT teams
+- DevSecOps / CI/CD vulnerability reporting via SARIF and XML/CSV
+
+## Comparison
+
+A free, open-source, self-hosted alternative to Nessus and OpenVAS. Distinctive vs. those tools: single desktop binary (no server stack), fully offline with no telemetry, built-in EPSS and CISA KEV scoring, scan diffing, and SARIF export.
+
+## Legal / ethical use
+
+For authorized security testing only — users should scan only systems they own or are explicitly permitted to assess. Denial-of-service tests are intentionally excluded.
+
+## Links
+
+- [Website](https://andriigordiienko.github.io/ShadowSecurityScanner-site/)
+- [Source code (GitHub)](https://github.com/safetylab/ShadowSecurityScanner)
+- [Latest release / download](https://github.com/safetylab/ShadowSecurityScanner/releases/latest)

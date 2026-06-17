@@ -3,12 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png</image:loc>
-      <image:title>ShadowSecurityScanner — modern network vulnerability scanner</image:title>
+      <image:title>ShadowSecurityScanner — free open-source penetration testing and network vulnerability scanner</image:title>
+      <image:caption>Free open-source penetration testing tool and network vulnerability scanner with EPSS/KEV exploit-aware prioritisation.</image:caption>
     </image:image>
   </url>
 </urlset>

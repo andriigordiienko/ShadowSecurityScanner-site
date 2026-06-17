@@ -11,8 +11,9 @@ dependencies, no tracking — just open `index.html`.
 | `styles.css` | All styling. Palette mirrors the app (SOC dark + cyan accent). |
 | `assets/logo.svg` | The app's shield mark (copied from `desktop/build/appicon.svg`). |
 | `assets/og-image.png` | 1200×630 social-share card (Open Graph / Twitter). |
-| `robots.txt` | Allows all crawlers; points to the sitemap. |
+| `robots.txt` | Allows all crawlers — incl. AI/LLM bots (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…); points to the sitemap. |
 | `sitemap.xml` | Single-URL sitemap with the social image. |
+| `llms.txt` | Structured, factual summary for AI/LLM crawlers (emerging `llms.txt` standard). |
 | `site.webmanifest` | PWA/install metadata. |
 
 ## SEO
@@ -21,9 +22,14 @@ The page is tuned for search and social sharing:
 
 - Canonical URL, `description`, `keywords`, `robots`, `theme-color`.
 - Open Graph + Twitter `summary_large_image` cards with a real 1200×630 PNG.
-- JSON-LD structured data: `SoftwareApplication`, `Organization`, `WebSite`,
-  and a `FAQPage` (mirrors the on-page FAQ → eligible for rich results).
+- JSON-LD structured data: `SoftwareApplication`, `Person`, `WebSite`,
+  `FAQPage` (mirrors the on-page FAQ → eligible for rich results), `HowTo`
+  and `BreadcrumbList`.
 - `robots.txt` + `sitemap.xml`, semantic headings (one `<h1>`), lazy assets.
+- **AI/LLM optimisation:** explicit AI-crawler allow-list in `robots.txt`,
+  an `llms.txt` summary, and factual, citeable copy (overview + Nessus/OpenVAS
+  comparison table) so assistants like ChatGPT, Gemini and Perplexity can
+  surface and cite the project accurately.
 
 > **Base URL.** Everything assumes the site is served at
 > `https://andriigordiienko.github.io/ShadowSecurityScanner-site/`. If you host

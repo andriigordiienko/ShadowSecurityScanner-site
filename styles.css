@@ -291,3 +291,23 @@ a.contact-link:hover { border-color: hsl(199 89% 52% / .5); }
   .stats { gap: 18px; }
   .stat { flex-basis: 40%; }
 }
+
+/* ── Prose (overview / AI-citeable copy) ── */
+.prose { max-width: 820px; margin: 0 auto; }
+.prose p { color: var(--muted); font-size: 16.5px; line-height: 1.75; margin: 0 0 16px; }
+.prose strong { color: var(--fg); }
+.prose a { color: var(--primary); text-decoration: none; border-bottom: 1px solid hsl(199 89% 52% / .35); }
+.prose a:hover { border-bottom-color: var(--primary); }
+
+/* ── Comparison table ── */
+.table-wrap { max-width: 980px; margin: 0 auto; overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.cmp { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 640px; }
+.cmp th, .cmp td { text-align: left; padding: 13px 16px; border-bottom: 1px solid var(--border); }
+.cmp thead th { color: var(--fg); font-weight: 700; background: var(--surface-2); position: sticky; top: 0; }
+.cmp thead th:first-child { border-top-left-radius: var(--radius); }
+.cmp thead th:last-child { border-top-right-radius: var(--radius); }
+.cmp tbody th { color: var(--fg); font-weight: 600; }
+.cmp tbody td { color: var(--muted); }
+.cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: none; }
+.cmp td.yes { color: var(--res); font-weight: 600; }
+.cmp tbody tr:hover { background: hsl(199 89% 52% / .04); }
