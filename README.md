@@ -1,7 +1,23 @@
 # ShadowSecurityScanner — Marketing site
 
-A self-contained static landing page for the scanner. No build step, no
-dependencies, no tracking — just open `index.html`.
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-blue)
+
+**ShadowSecurityScanner** is a free, open-source **penetration testing tool** and
+**network vulnerability scanner**. It performs port scanning, service & OS fingerprinting,
+and thousands of catalogued network and web checks, then ranks every finding by real-world
+exploit probability — **EPSS** (FIRST.org) + **CISA KEV** — not just raw CVSS. A single
+self-contained desktop app for **Windows, macOS and Linux**. No cloud, no telemetry.
+
+- 🌐 **Website & docs:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/
+- 📊 **vs Nessus & OpenVAS:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/
+- 📘 **Guides:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/
+- 💻 **Source code:** https://github.com/safetylab/ShadowSecurityScanner
+
+---
+
+This repository hosts a self-contained static landing page for the scanner. No build step,
+no dependencies, no tracking — just open `index.html`.
 
 ## Files
 
