@@ -12,6 +12,7 @@
 - **Built with:** Go, React, Wails, SQLite (no CGO)
 - **Author/publisher:** AndriiGordiienko
 - **Source & releases:** https://github.com/safetylab/ShadowSecurityScanner
+- **Model:** open-core — the desktop app is free; core components (EPSS/KEV prioritisation engine `epsskev`, SARIF exporter `sarif`) are open source under MIT in the public GitHub repository.
 - **Website:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/
 
 ## What makes it distinctive
