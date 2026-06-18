@@ -1,5 +1,5 @@
 <!--
-  DRAFT README for the PUBLIC downloads repo  github.com/safetylab/shadowsecurityscanner
+  DRAFT README for the PUBLIC downloads repo  github.com/safetylab/ShadowSecurityScanner
   This repo only hosts release binaries — the source is maintained privately, so there is
   NO "build from source" section. Copy everything BELOW this comment into the repo README.md.
 -->
@@ -7,9 +7,9 @@
 # ShadowSecurityScanner
 
 ![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-blue)
-![Downloads](https://img.shields.io/github/downloads/safetylab/shadowsecurityscanner/total)
-![Latest release](https://img.shields.io/github/v/release/safetylab/shadowsecurityscanner)
-![Stars](https://img.shields.io/github/stars/safetylab/shadowsecurityscanner?style=social)
+![Downloads](https://img.shields.io/github/downloads/safetylab/ShadowSecurityScanner/total)
+![Latest release](https://img.shields.io/github/v/release/safetylab/ShadowSecurityScanner)
+![Stars](https://img.shields.io/github/stars/safetylab/ShadowSecurityScanner?style=social)
 
 **ShadowSecurityScanner** is a free **penetration testing tool** and **network vulnerability
 scanner**. It performs port scanning, service & OS fingerprinting, and thousands of catalogued
@@ -28,7 +28,7 @@ for **Windows, macOS and Linux**. No cloud, no agents, no telemetry.
 ## Download
 
 Get the latest build for your platform from the
-[**Releases page**](https://github.com/safetylab/shadowsecurityscanner/releases/latest):
+[**Releases page**](https://github.com/safetylab/ShadowSecurityScanner/releases/latest):
 
 | Platform | File |
 |---|---|

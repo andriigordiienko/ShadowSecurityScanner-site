@@ -11,7 +11,7 @@
 - **Architecture:** Single self-contained desktop binary; data stored locally; no cloud, no telemetry
 - **Built with:** Go, React, Wails, SQLite (no CGO)
 - **Author/publisher:** AndriiGordiienko
-- **Source & releases:** https://github.com/safetylab/shadowsecurityscanner
+- **Source & releases:** https://github.com/safetylab/ShadowSecurityScanner
 - **Model:** open-core — the desktop app is free; core components (EPSS/KEV prioritisation engine `epsskev`, SARIF exporter `sarif`) are open source under MIT in the public GitHub repository.
 - **Website:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/
 
@@ -41,8 +41,8 @@ For authorized security testing only — users should scan only systems they own
 ## Links
 
 - [Website](https://andriigordiienko.github.io/ShadowSecurityScanner-site/)
-- [Source code (GitHub)](https://github.com/safetylab/shadowsecurityscanner)
-- [Latest release / download](https://github.com/safetylab/shadowsecurityscanner/releases/latest)
+- [Source code (GitHub)](https://github.com/safetylab/ShadowSecurityScanner)
+- [Latest release / download](https://github.com/safetylab/ShadowSecurityScanner/releases/latest)
 
 ## Guides & comparisons
 
