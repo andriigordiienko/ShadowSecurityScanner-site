@@ -3,7 +3,6 @@ title: "Why CVSS Isn't Enough: Prioritising Vulnerabilities with EPSS and CISA K
 published: false
 description: "Severity tells you how bad a vulnerability is. EPSS and CISA KEV tell you how likely it is to be exploited. Here's how to combine them into a real fix-first order."
 tags: security, cybersecurity, devops, opensource
-canonical_url:
 ---
 
 If you've ever run a vulnerability scan, you know the feeling: hundreds of findings,

@@ -3,7 +3,6 @@ title: "Rebuilding a 2000s Vulnerability Scanner as a Modern Open-Source Tool"
 published: false
 description: "The original Shadow Security Scanner was a fast, Windows-native vuln scanner in the early 2000s. I rebuilt it from scratch in Go and React — here's what changed and what carried over."
 tags: opensource, security, go, react
-canonical_url:
 ---
 
 In the early 2000s, **Shadow Security Scanner (SSS)** from Safety-Lab was one of the

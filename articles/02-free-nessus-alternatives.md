@@ -3,7 +3,6 @@ title: "Free and Open-Source Alternatives to Nessus in 2026"
 published: false
 description: "Nessus is great, but the free tier caps at 16 IPs. Here are the best free and open-source vulnerability scanners — and how to pick between them."
 tags: security, cybersecurity, opensource, devops
-canonical_url:
 ---
 
 [Nessus](https://www.tenable.com/products/nessus) is a fine scanner, but the free
