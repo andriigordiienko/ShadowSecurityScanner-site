@@ -144,7 +144,7 @@
           {
             "@type": "Question",
             "name": "Is it open source?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes — released under the MIT License. Browse the code, build it yourself, or open an issue on GitHub." }
+            "acceptedAnswer": { "@type": "Answer", "text": "ShadowSecurityScanner follows an open-core model. The app is free to use, and core components are released as standalone MIT-licensed open-source projects — such as the EPSS/KEV prioritisation library on GitHub, which you can read, audit and reuse." }
           }
         ]
       },
@@ -499,6 +499,32 @@
     </div>
   </section>
 
+  <!-- ───────────────────────── Open source ───────────────────────── -->
+  <section class="section" id="opensource">
+    <div class="section-head">
+      <span class="eyebrow">Open source</span>
+      <h2>Open-core, with MIT-licensed components</h2>
+      <p>ShadowSecurityScanner follows an open-core model: it's free to use, and parts of it are released as standalone open-source libraries you can read, audit and reuse.</p>
+    </div>
+    <div class="feature-grid">
+      <a class="card" href="https://github.com/safetylab/epss-kev-prioritizer" target="_blank" rel="noreferrer" style="text-decoration:none;color:inherit">
+        <div class="card-ic">📦</div>
+        <h3>epss-kev-prioritizer <span class="badge-kev">MIT</span></h3>
+        <p>The exploit-aware prioritisation engine as a standalone <strong>Go library &amp; CLI</strong>: fetch FIRST.org EPSS scores and CISA KEV status for any list of CVEs and sort them KEV → EPSS → CVSS. Read the code on GitHub →</p>
+      </a>
+      <article class="card">
+        <div class="card-ic">🔓</div>
+        <h3>Free to use</h3>
+        <p>The desktop scanner is free for authorized security testing on Windows, macOS and Linux — no licence fee, no account, no telemetry.</p>
+      </article>
+      <article class="card">
+        <div class="card-ic">🤝</div>
+        <h3>Open to contributions</h3>
+        <p>Issues, ideas and pull requests to the open components are welcome — the prioritisation library is a good place to start.</p>
+      </article>
+    </div>
+  </section>
+
   <!-- ───────────────────────── Screens ───────────────────────── -->
   <section class="section" id="screens">
     <div class="section-head">
@@ -683,7 +709,7 @@
       </details>
       <details>
         <summary>Is it open source?</summary>
-        <p>Yes — released under the MIT License. Browse the code, build it yourself, or open an issue on GitHub.</p>
+        <p>ShadowSecurityScanner follows an <strong>open-core</strong> model. The app is free to use, and core components are released as standalone MIT-licensed open-source projects — such as the <a href="https://github.com/safetylab/epss-kev-prioritizer" target="_blank" rel="noreferrer">EPSS/KEV prioritisation library</a>, which you can read, audit and reuse. See the <a href="#opensource">open-source components</a> section.</p>
       </details>
     </div>
   </section>
