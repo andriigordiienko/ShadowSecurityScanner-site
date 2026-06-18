@@ -12,7 +12,7 @@ self-contained desktop app for **Windows, macOS and Linux**. No cloud, no teleme
 - 🌐 **Website & docs:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/
 - 📊 **vs Nessus & OpenVAS:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/
 - 📘 **Guides:** https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/
-- 💻 **Source code:** https://github.com/safetylab/ShadowSecurityScanner
+- 💻 **Source code:** https://github.com/safetylab/shadowsecurityscanner
 
 ---
 
@@ -94,5 +94,5 @@ work too (all serve the same static files):
 - **Download links** — the buttons currently show a placeholder. Point the
   `data-dl` buttons at your GitHub Releases assets once published.
 - **Contact** — email and company are in the `#contact` section; the GitHub URL
-  appears throughout (`safetylab/ShadowSecurityScanner`).
+  appears throughout (`safetylab/shadowsecurityscanner`).
 - **Colours** — tweak the `:root` variables at the top of `styles.css`.

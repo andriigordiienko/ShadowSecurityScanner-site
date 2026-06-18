@@ -64,6 +64,6 @@ into GitHub code scanning and CI.
 - **Offline-first is a feature.** For a security tool especially, "your data stays here"
   is a selling point, not a limitation.
 
-It's free and MIT-licensed — [the source is on GitHub](https://github.com/safetylab/ShadowSecurityScanner)
+It's free and MIT-licensed — [the source is on GitHub](https://github.com/safetylab/shadowsecurityscanner)
 and the [site has the downloads and docs](https://andriigordiienko.github.io/ShadowSecurityScanner-site/).
 Feedback on detection coverage and false positives is very welcome.
