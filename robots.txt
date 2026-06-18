@@ -3,9 +3,10 @@
 
 User-agent: *
 Allow: /
-# Internal docs — not part of the site
+# Internal docs & article drafts — not part of the site (published externally)
 Disallow: /off-page-seo-kit.md
 Disallow: /README.md
+Disallow: /articles/
 
 # Search engines
 User-agent: Googlebot
