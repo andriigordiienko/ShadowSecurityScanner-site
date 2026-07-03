@@ -37,6 +37,14 @@
         "mainEntityOfPage": "https://shadowsecurityscanner.com/compare/"
       },
       {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Which is the best free vulnerability scanner?", "acceptedAnswer": { "@type": "Answer", "text": "For a fully free, open-source option, ShadowSecurityScanner (MIT) and OpenVAS/GVM (GPL) are both strong. ShadowSecurityScanner is the fastest to start and most private — a single desktop app that runs offline with EPSS/KEV exploit prioritisation built in. OpenVAS suits an always-on Linux scanning server. Nessus offers the most enterprise features but is proprietary with a 16-IP free tier." } },
+          { "@type": "Question", "name": "Is ShadowSecurityScanner a good alternative to Nessus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is free and open source with no 16-IP limit and no account, runs offline, and ranks findings by EPSS exploit probability and CISA KEV status out of the box. Nessus remains stronger for large-scale compliance auditing and vendor support." } },
+          { "@type": "Question", "name": "How is ShadowSecurityScanner different from OpenVAS?", "acceptedAnswer": { "@type": "Answer", "text": "Both are open source and offline, but ShadowSecurityScanner runs as a single cross-platform desktop binary with zero server setup, whereas OpenVAS/GVM is a multi-component Linux server stack. ShadowSecurityScanner also adds built-in EPSS/KEV prioritisation, scan diffing and SARIF export." } }
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shadowsecurityscanner.com/" },
@@ -136,6 +144,14 @@
       <p>Download ShadowSecurityScanner for Windows, macOS or Linux — a single binary, no installer.</p>
       <a class="btn btn-primary btn-lg" href="../#download">Download ShadowSecurityScanner</a>
     </div>
+
+    <h2>Related</h2>
+    <ul>
+      <li><a href="../nessus-alternative/">Free open-source Nessus alternative</a> — no 16-IP cap, no account.</li>
+      <li><a href="../openvas-alternative/">Simpler open-source OpenVAS alternative</a> — no server stack.</li>
+      <li><a href="../guides/what-is-epss-and-kev/">What are EPSS and CISA KEV?</a> — exploit-aware prioritisation explained.</li>
+      <li><a href="../guides/best-free-penetration-testing-tools/">Best free open-source penetration testing tools</a>.</li>
+    </ul>
 
     <p class="coverage-note" style="margin-top:28px">Comparison reflects publicly documented features at the time of writing and is for orientation only; verify current capabilities with each vendor. Nessus is a trademark of Tenable; OpenVAS/GVM are projects of Greenbone. Product names belong to their respective owners.</p>
   </article>
