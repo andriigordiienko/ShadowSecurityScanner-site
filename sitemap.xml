@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://shadowsecurityscanner.com/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/assets/og-image.png</image:loc>
+      <image:loc>https://shadowsecurityscanner.com/assets/og-image.png</image:loc>
       <image:title>ShadowSecurityScanner — free open-source penetration testing and network vulnerability scanner</image:title>
       <image:caption>Free open-source penetration testing tool and network vulnerability scanner with EPSS/KEV exploit-aware prioritisation.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/compare/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://shadowsecurityscanner.com/compare/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://shadowsecurityscanner.com/guides/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/how-to-run-a-network-vulnerability-scan/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://shadowsecurityscanner.com/guides/how-to-run-a-network-vulnerability-scan/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/what-is-epss-and-kev/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://shadowsecurityscanner.com/guides/what-is-epss-and-kev/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://andriigordiienko.github.io/ShadowSecurityScanner-site/guides/best-free-penetration-testing-tools/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://shadowsecurityscanner.com/guides/best-free-penetration-testing-tools/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

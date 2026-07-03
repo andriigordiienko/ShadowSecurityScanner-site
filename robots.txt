@@ -50,4 +50,4 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
-Sitemap: https://andriigordiienko.github.io/ShadowSecurityScanner-site/sitemap.xml
+Sitemap: https://shadowsecurityscanner.com/sitemap.xml
