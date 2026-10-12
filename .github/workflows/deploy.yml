@@ -1,0 +1,86 @@
+name: Deploy site
+
+# Publishes the static site. Runs on pushes to main, by hand, and from the
+# marketing workflow after it regenerates pages (a push made with the job's
+# GITHUB_TOKEN does not trigger workflows, so it calls this one directly).
+#
+# Targets:
+#   - GitHub Pages: always. Serves the custom domain once Pages has
+#     shadowsecurityscanner.com set and DNS points at GitHub (marketing/README.md).
+#   - Your own server over rsync+SSH: only when these secrets are set —
+#     DEPLOY_HOST, DEPLOY_USER, DEPLOY_PATH, DEPLOY_SSH_KEY (private key) and
+#     DEPLOY_KNOWN_HOSTS (output of `ssh-keyscan <host>`). Files are added and
+#     updated, never deleted, so anything else under DEPLOY_PATH is left alone.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+  workflow_call: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # the marketing workflow pushes right before calling this
+      # Only the public site: no automation code, data, drafts or docs.
+      - name: Assemble _site
+        run: |
+          rsync -a --exclude='.*' --exclude='_site' --exclude='marketing/' --exclude='articles/' \
+                --exclude='scripts/' --exclude='*.md' ./ _site/
+          find _site -maxdepth 1 | sort
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  pages:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  server:
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      HOST: ${{ secrets.DEPLOY_HOST }}
+    steps:
+      - name: Check deploy secrets
+        id: cfg
+        run: |
+          if [ -n "$HOST" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else echo "DEPLOY_HOST not set — skipping server deploy"; fi
+      - uses: actions/download-artifact@v4
+        if: steps.cfg.outputs.enabled == 'true'
+        with:
+          name: github-pages
+      - name: rsync to server
+        if: steps.cfg.outputs.enabled == 'true'
+        env:
+          USER_: ${{ secrets.DEPLOY_USER }}
+          DEST: ${{ secrets.DEPLOY_PATH }}
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          KNOWN: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          mkdir -p site ~/.ssh && tar -xf artifact.tar -C site
+          printf '%s\n' "$KEY" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$KNOWN" > ~/.ssh/known_hosts
+          rsync -rlt --checksum -e "ssh -i ~/.ssh/deploy -o StrictHostKeyChecking=yes" \
+            site/ "$USER_@$HOST:${DEST%/}/"

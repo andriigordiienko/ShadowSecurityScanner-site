@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
+  <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
+  <title>CISA KEV weekly digest: Sep 28 – Oct 4, 2026 (6 new exploited CVEs)</title>
+  <meta name="description" content="6 vulnerabilities CISA added to KEV in week 40 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://shadowsecurityscanner.com/kev/2026-w40/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CISA KEV weekly digest: Sep 28 – Oct 4, 2026 (6 new exploited CVEs)" />
+  <meta property="og:description" content="6 vulnerabilities CISA added to KEV in week 40 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta property="og:url" content="https://shadowsecurityscanner.com/kev/2026-w40/" />
+  <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "CISA KEV weekly digest: Sep 28 – Oct 4, 2026 (6 new exploited CVEs)",
+      "description": "6 vulnerabilities CISA added to KEV in week 40 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+      "datePublished": "2026-10-05",
+      "author": {
+        "@type": "Person",
+        "name": "AndriiGordiienko"
+      },
+      "image": "https://shadowsecurityscanner.com/assets/og-image.png",
+      "mainEntityOfPage": "https://shadowsecurityscanner.com/kev/2026-w40/",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-104286"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-76504"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-102489"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-86950"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-88779"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-102490"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shadowsecurityscanner.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "KEV digest",
+          "item": "https://shadowsecurityscanner.com/kev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Week 40",
+          "item": "https://shadowsecurityscanner.com/kev/2026-w40/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="ShadowSecurityScanner home">
+      <img src="../../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../../kev/">KEV digest</a>
+      <a class="btn btn-primary" href="../../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../kev/">KEV digest</a><span>/</span>Week 40</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">KEV weekly digest · week 40</span>
+      <h1>Known exploited vulnerabilities: Sep 28 – Oct 4, 2026</h1>
+      <p class="meta">6 new CISA KEV entries · EPSS as of 2026-10-12</p>
+    </div>
+    <p>CISA added <strong>6</strong> vulnerabilities to the Known Exploited Vulnerabilities catalog between Sep 28 – Oct 4, 2026: each one is confirmed to be exploited in the wild. 0 are linked to ransomware campaigns, 0 have a public exploit, and 0 have an EPSS score of 10% or more. The catalog now holds 1739 entries.</p>
+    <h2>Fix-first order</h2>
+    <p>Sorted the way <a href="../../guides/what-is-epss-and-kev/">exploit-aware triage</a> works:
+    ransomware-linked first, then by EPSS exploit probability.</p>
+    <div class="table-wrap" style="margin:0 0 20px">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">CVE</th><th scope="col">Product</th><th scope="col">EPSS</th><th scope="col">Public exploit</th><th scope="col">Ransomware</th><th scope="col">CISA due</th><th scope="col">Scanner</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-104286">CVE-2026-104286</a></th>
+            <td>Fortinet FortiMail</td>
+            <td>2.2% <span class="meta">(p82)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-04</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-76504">CVE-2026-76504</a></th>
+            <td>Cisco Catalyst SD-WAN Manager</td>
+            <td>1.8% <span class="meta">(p78)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-03</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-102489">CVE-2026-102489</a></th>
+            <td>Zammad GmbH Zammad</td>
+            <td>1.3% <span class="meta">(p69)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-05</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-86950">CVE-2026-86950</a></th>
+            <td>Apple Multiple Products</td>
+            <td>1.2% <span class="meta">(p68)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-13</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-88779">CVE-2026-88779</a></th>
+            <td>Citrix NetScaler</td>
+            <td>0.6% <span class="meta">(p47)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-07</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-102490">CVE-2026-102490</a></th>
+            <td>Zammad GmbH Zammad</td>
+            <td>0.5% <span class="meta">(p44)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-05</td>
+            <td>Catalog</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta"><strong>Scanner</strong>: “Active check” means ShadowSecurityScanner ships a
+    network or web probe for this CVE; “Catalog” means it is tracked in the KEV-synced audit catalog
+    and flagged when version fingerprinting matches.</p>
+    <h2 id="cve-2026-104286">CVE-2026-104286 — Fortinet FortiMail Path Traversal Vulnerability</h2>
+    <p>Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-01 · <strong>CISA due date:</strong> 2026-10-04</li>
+      <li><strong>EPSS:</strong> 2.2% <span class="meta">(p82)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-22, CWE-158</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://fortiguard.fortinet.com/psirt/FG-IR-26-175" rel="noreferrer nofollow">fortiguard.fortinet.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-104286" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-76504">CVE-2026-76504 — Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability</h2>
+    <p>Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-09-30 · <strong>CISA due date:</strong> 2026-10-03</li>
+      <li><strong>EPSS:</strong> 1.8% <span class="meta">(p78)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-177</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU" rel="noreferrer nofollow">sec.cloudapps.cisco.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76504" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-102489">CVE-2026-102489 — Zammad GmbH Zammad Session Fixation Vulnerability</h2>
+    <p>Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-02 · <strong>CISA due date:</strong> 2026-10-05</li>
+      <li><strong>EPSS:</strong> 1.3% <span class="meta">(p69)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-384</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://zammad.com/en/product/releases/" rel="noreferrer nofollow">zammad.com</a> · <a href="https://community.zammad.org/t/take-care-local-privilege-escalation-cve-2026-102490-is-reported-as-being-actively-exploited/21297/2" rel="noreferrer nofollow">community.zammad.org</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102489" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-86950">CVE-2026-86950 — Apple Multiple Products Out-of-Bounds Write Vulnerability</h2>
+    <p>Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-09-29 · <strong>CISA due date:</strong> 2026-10-13</li>
+      <li><strong>EPSS:</strong> 1.2% <span class="meta">(p68)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-787</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://support.apple.com/en-us/149226" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/149228" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/149229" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-86950" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-88779">CVE-2026-88779 — Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability</h2>
+    <p>Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-04 · <strong>CISA due date:</strong> 2026-10-07</li>
+      <li><strong>EPSS:</strong> 0.6% <span class="meta">(p47)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-119</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697174" rel="noreferrer nofollow">support.citrix.com</a> · <a href="https://community.citrix.com/techzone-blogs/110_security-updates/understanding-and-addressing-cve-2026-88779-in-citrix-netscaler-adc-and-citrix-netscaler-gateway/" rel="noreferrer nofollow">community.citrix.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-88779" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-102490">CVE-2026-102490 — Zammad GmbH Zammad Improper Privilege Management Vulnerability</h2>
+    <p>Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-02 · <strong>CISA due date:</strong> 2026-10-05</li>
+      <li><strong>EPSS:</strong> 0.5% <span class="meta">(p44)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-269</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://zammad.com/en/product/releases/" rel="noreferrer nofollow">zammad.com</a> · <a href="https://community.zammad.org/t/take-care-local-privilege-escalation-cve-2026-102490-is-reported-as-being-actively-exploited/21297/2" rel="noreferrer nofollow">community.zammad.org</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102490" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2>How to find these on your network</h2>
+    <p>Every KEV entry is flagged automatically in ShadowSecurityScanner: findings are sorted KEV →
+    EPSS → severity, and a daily catalog update pulls new KEV entries without a reinstall. See
+    <a href="../../guides/how-to-run-a-network-vulnerability-scan/">how to run a network vulnerability scan</a>.</p>
+    <div class="cta-band">
+      <h2 style="margin-top:0">Scan for known-exploited vulnerabilities</h2>
+      <p>Free and open-source, with CISA KEV and EPSS built in.</p>
+      <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
+    </div>
+    <p class="meta">Sources: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noreferrer">CISA KEV</a>,
+    <a href="https://www.first.org/epss/" rel="noreferrer">FIRST.org EPSS</a>, Exploit-DB, Metasploit. ·
+    <a href="../">All weekly digests</a></p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../../">Home</a>
+      <a href="../../guides/">Guides</a>
+      <a href="../../kev/">KEV digest</a>
+      <a href="../../changelog/">Changelog</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

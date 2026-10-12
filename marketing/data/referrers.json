@@ -1,0 +1,39 @@
+{
+  "2026-10-12": [
+    {
+      "count": 20,
+      "referrer": "Bing",
+      "uniques": 13
+    },
+    {
+      "count": 9,
+      "referrer": "DuckDuckGo",
+      "uniques": 8
+    },
+    {
+      "count": 8,
+      "referrer": "github.com",
+      "uniques": 7
+    },
+    {
+      "count": 7,
+      "referrer": "Google",
+      "uniques": 4
+    },
+    {
+      "count": 2,
+      "referrer": "alternativeto.net",
+      "uniques": 2
+    },
+    {
+      "count": 2,
+      "referrer": "teams.public.onecdn.static.microsoft",
+      "uniques": 2
+    },
+    {
+      "count": 2,
+      "referrer": "chatgpt.com",
+      "uniques": 1
+    }
+  ]
+}
