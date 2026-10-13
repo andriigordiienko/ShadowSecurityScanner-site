@@ -1,0 +1,12 @@
+{
+  "2026-w40": {
+    "count": 6,
+    "span": "Sep 28 – Oct 4, 2026",
+    "top": "CVE-2026-104286 (Fortinet FortiMail)"
+  },
+  "2026-w41": {
+    "count": 5,
+    "span": "Oct 5–11, 2026",
+    "top": "CVE-2015-3306 (ProFTPD)"
+  }
+}

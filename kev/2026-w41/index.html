@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
+  <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
+  <title>CISA KEV weekly digest: Oct 5–11, 2026 (5 new exploited CVEs)</title>
+  <meta name="description" content="5 vulnerabilities CISA added to KEV in week 41 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://shadowsecurityscanner.com/kev/2026-w41/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CISA KEV weekly digest: Oct 5–11, 2026 (5 new exploited CVEs)" />
+  <meta property="og:description" content="5 vulnerabilities CISA added to KEV in week 41 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta property="og:url" content="https://shadowsecurityscanner.com/kev/2026-w41/" />
+  <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "CISA KEV weekly digest: Oct 5–11, 2026 (5 new exploited CVEs)",
+      "description": "5 vulnerabilities CISA added to KEV in week 41 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+      "datePublished": "2026-10-12",
+      "author": {
+        "@type": "Person",
+        "name": "AndriiGordiienko"
+      },
+      "image": "https://shadowsecurityscanner.com/assets/og-image.png",
+      "mainEntityOfPage": "https://shadowsecurityscanner.com/kev/2026-w41/",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "CVE-2015-3306"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2015-5477"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2016-3081"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2021-3199"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2023-22894"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shadowsecurityscanner.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "KEV digest",
+          "item": "https://shadowsecurityscanner.com/kev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Week 41",
+          "item": "https://shadowsecurityscanner.com/kev/2026-w41/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="ShadowSecurityScanner home">
+      <img src="../../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../../kev/">KEV digest</a>
+      <a class="btn btn-primary" href="../../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../kev/">KEV digest</a><span>/</span>Week 41</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">KEV weekly digest · week 41</span>
+      <h1>Known exploited vulnerabilities: Oct 5–11, 2026</h1>
+      <p class="meta">5 new CISA KEV entries · EPSS as of 2026-10-12</p>
+    </div>
+    <p>CISA added <strong>5</strong> vulnerabilities to the Known Exploited Vulnerabilities catalog between Oct 5–11, 2026: each one is confirmed to be exploited in the wild. 0 are linked to ransomware campaigns, 3 have a public exploit, and 4 have an EPSS score of 10% or more. The catalog now holds 1739 entries.</p>
+    <h2>Fix-first order</h2>
+    <p>Sorted the way <a href="../../guides/what-is-epss-and-kev/">exploit-aware triage</a> works:
+    ransomware-linked first, then by EPSS exploit probability.</p>
+    <div class="table-wrap" style="margin:0 0 20px">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">CVE</th><th scope="col">Product</th><th scope="col">EPSS</th><th scope="col">Public exploit</th><th scope="col">Ransomware</th><th scope="col">CISA due</th><th scope="col">Scanner</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2015-3306">CVE-2015-3306</a></th>
+            <td>ProFTPD</td>
+            <td>99.5% <span class="meta">(p100)</span></td>
+            <td>Metasploit + Exploit-DB</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-11</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2015-5477">CVE-2015-5477</a></th>
+            <td>ISC BIND</td>
+            <td>99.4% <span class="meta">(p100)</span></td>
+            <td>Metasploit + Exploit-DB</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-11</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2016-3081">CVE-2016-3081</a></th>
+            <td>Apache Struts</td>
+            <td>96.1% <span class="meta">(p100)</span></td>
+            <td>Metasploit + Exploit-DB</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-11</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2021-3199">CVE-2021-3199</a></th>
+            <td>ONLYOFFICE Docs</td>
+            <td>19.4% <span class="meta">(p97)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-11</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2023-22894">CVE-2023-22894</a></th>
+            <td>Strapi</td>
+            <td>3.6% <span class="meta">(p89)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-11</td>
+            <td>Catalog</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta"><strong>Scanner</strong>: “Active check” means ShadowSecurityScanner ships a
+    network or web probe for this CVE; “Catalog” means it is tracked in the KEV-synced audit catalog
+    and flagged when version fingerprinting matches.</p>
+    <h2 id="cve-2015-3306">CVE-2015-3306 — ProFTPD Improper Access Control Vulnerability</h2>
+    <p>ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-08 · <strong>CISA due date:</strong> 2026-10-11</li>
+      <li><strong>EPSS:</strong> 99.5% <span class="meta">(p100)</span> · <strong>Public exploit:</strong> Metasploit + Exploit-DB · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-284</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="http://www.proftpd.org/" rel="noreferrer nofollow">proftpd.org</a> · <a href="https://lists.debian.org/debian-security-announce/2015/msg00154.html" rel="noreferrer nofollow">lists.debian.org</a> · <a href="https://lists.opensuse.org/archives/list/updates@lists.opensuse.org/message/WE6YZRG5UVXMGQ7IVDRYBPIWV4M6UUGM/" rel="noreferrer nofollow">lists.opensuse.org</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3306" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2015-5477">CVE-2015-5477 —  ISC BIND Data Processing Errors Vulnerability</h2>
+    <p>ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-08 · <strong>CISA due date:</strong> 2026-10-11</li>
+      <li><strong>EPSS:</strong> 99.4% <span class="meta">(p100)</span> · <strong>Public exploit:</strong> Metasploit + Exploit-DB · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-19</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://web.archive.org/web/20150729014733/https://kb.isc.org/article/AA-01272" rel="noreferrer nofollow">web.archive.org</a> · <a href="https://access.redhat.com/errata/RHSA-2015:1513.html" rel="noreferrer nofollow">access.redhat.com</a> · <a href="https://supportportal.juniper.net/s/article/2016-01-Security-Bulletin-Junos-Vulnerability-in-ISC-BIND-named-CVE-2015-5477" rel="noreferrer nofollow">supportportal.juniper.net</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-5477" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2016-3081">CVE-2016-3081 — Apache Struts Command Injection Vulnerability</h2>
+    <p>Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-08 · <strong>CISA due date:</strong> 2026-10-11</li>
+      <li><strong>EPSS:</strong> 96.1% <span class="meta">(p100)</span> · <strong>Public exploit:</strong> Metasploit + Exploit-DB · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-77</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://cwiki.apache.org/confluence/display/WW/S2-032" rel="noreferrer nofollow">cwiki.apache.org</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2016-3081" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2021-3199">CVE-2021-3199 — ONLYOFFICE Docs Server Path Traversal Vulnerability</h2>
+    <p>ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-08 · <strong>CISA due date:</strong> 2026-10-11</li>
+      <li><strong>EPSS:</strong> 19.4% <span class="meta">(p97)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-22</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://github.com/ONLYOFFICE/DocumentServer/blob/903fe5ab7a275bd69c3c3346af2d21cf87ebeabf/CHANGELOG.md#563" rel="noreferrer nofollow">github.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-3199" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2023-22894">CVE-2023-22894 — Strapi Cleartext Storage of Sensitive Information Vulnerability</h2>
+    <p>Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution. </p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-08 · <strong>CISA due date:</strong> 2026-10-11</li>
+      <li><strong>EPSS:</strong> 3.6% <span class="meta">(p89)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-312</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://strapi.io/blog/security-disclosure-of-vulnerabilities-cve" rel="noreferrer nofollow">strapi.io</a> · <a href="https://github.com/strapi/strapi/releases" rel="noreferrer nofollow">github.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22894" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2>How to find these on your network</h2>
+    <p>Every KEV entry is flagged automatically in ShadowSecurityScanner: findings are sorted KEV →
+    EPSS → severity, and a daily catalog update pulls new KEV entries without a reinstall. See
+    <a href="../../guides/how-to-run-a-network-vulnerability-scan/">how to run a network vulnerability scan</a>.</p>
+    <div class="cta-band">
+      <h2 style="margin-top:0">Scan for known-exploited vulnerabilities</h2>
+      <p>Free and open-source, with CISA KEV and EPSS built in.</p>
+      <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
+    </div>
+    <p class="meta">Sources: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noreferrer">CISA KEV</a>,
+    <a href="https://www.first.org/epss/" rel="noreferrer">FIRST.org EPSS</a>, Exploit-DB, Metasploit. ·
+    <a href="../">All weekly digests</a></p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../../">Home</a>
+      <a href="../../guides/">Guides</a>
+      <a href="../../kev/">KEV digest</a>
+      <a href="../../changelog/">Changelog</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "one_liner": "Free, open-source network vulnerability scanner that ranks findings by real-world exploitability (EPSS + CISA KEV). Windows, macOS, Linux. No cloud, no telemetry. MIT.",
+  "hashtags": [
+    "infosec",
+    "cybersecurity",
+    "opensource",
+    "vulnerabilitymanagement"
+  ],
+  "post_window_utc": [
+    12,
+    21
+  ],
+  "post_weekdays_only": true,
+  "kev_digest_weekday": 0,
+  "report_weekday": 0,
+  "devto_every_days": 14,
+  "release_announce_max_age_days": 7,
+  "mentions": {
+    "brand": [
+      "shadowsecurityscanner",
+      "\"shadow security scanner\""
+    ],
+    "opportunity": [
+      "vulnerability scanner",
+      "nessus",
+      "openvas",
+      "EPSS",
+      "\"known exploited\" CISA",
+      "pentest tool"
+    ],
+    "stackexchange_sites": [
+      "security",
+      "serverfault"
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
+  <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
+  <title>Changelog — ShadowSecurityScanner releases</title>
+  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.5.6 (2026-10-06)." />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://shadowsecurityscanner.com/changelog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Changelog — ShadowSecurityScanner releases" />
+  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.5.6 (2026-10-06)." />
+  <meta property="og:url" content="https://shadowsecurityscanner.com/changelog/" />
+  <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "ShadowSecurityScanner",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "softwareVersion": "1.5.6",
+      "datePublished": "2026-10-06",
+      "releaseNotes": "https://shadowsecurityscanner.com/changelog/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://shadowsecurityscanner.com/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shadowsecurityscanner.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Changelog",
+          "item": "https://shadowsecurityscanner.com/changelog/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="ShadowSecurityScanner home">
+      <img src="../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../guides/">Guides</a>
+      <a class="btn btn-primary" href="../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span>Changelog</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">Changelog</span>
+      <h1>ShadowSecurityScanner changelog</h1>
+      <p class="meta">Latest: v1.5.6 · 2026-10-06 · 11 releases</p>
+    </div>
+    <p>Every release of the free, open-source vulnerability scanner — new checks, fixes and
+    performance work. Builds for Windows, macOS and Linux are attached to each release on
+    <a href="https://github.com/safetylab/ShadowSecurityScanner/releases" rel="noreferrer">GitHub</a>.</p>
+    <section id="v1.5.6">
+      <h2>v1.5.6 <span class="meta">· 2026-10-06</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.6" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.5.4">
+      <h2>v1.5.4 <span class="meta">· 2026-09-30</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.4" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.5.3">
+      <h2>v1.5.3 <span class="meta">· 2026-08-11</span></h2>
+<h3>What's in this release</h3>
+<p>The app now writes <code>desktop.log</code> next to its database, so if it fails to start before the window appears it records why instead of closing silently.</p>
+<p>Release builds switched to Wails' production configuration. Earlier downloads were development builds and shipped developer tooling that end users never need; the Windows binary is about 3 MB smaller as a result.</p>
+<p>Built with Go 1.26.5.</p>
+<h3>Windows: the SmartScreen warning</h3>
+<p><strong>These binaries are not code-signed.</strong> Windows attaches a "downloaded from the internet" mark to the file and SmartScreen warns before running anything it has no reputation for. The application is not modified in any way — this is what Windows shows for any unsigned download.</p>
+<p>To run it, click <strong>More info</strong> → <strong>Run anyway</strong>.</p>
+<p>If nothing happens at all when you double-click, you are most likely signed in as the built-in <code>Administrator</code> account. Windows cannot display the SmartScreen dialog for that account and refuses the launch without showing anything. Clear the mark and it will start:</p>
+<pre><code>Unblock-File -Path .\ShadowSecurityScanner-windows-amd64.exe</code></pre>
+<p>Some antivirus products also flag unsigned security tools heuristically. This scanner contains thousands of CVE identifiers and references to public exploit databases, which is exactly what it needs to do its job and exactly what generic machine-learning detections react to.</p>
+<h3>macOS</h3>
+<p>The DMG is signed with a Developer ID and notarized by Apple, so it opens normally with no Gatekeeper warning.</p>
+<h3>Linux</h3>
+<p>Mark the file executable before running it:</p>
+<pre><code>chmod +x ShadowSecurityScanner-linux-amd64
+./ShadowSecurityScanner-linux-amd64</code></pre>
+<p>Requires GTK 4 and WebKitGTK 6.0.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.3" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.5.2">
+      <h2>v1.5.2 <span class="meta">· 2026-08-11</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.2" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.5.1">
+      <h2>v1.5.1 <span class="meta">· 2026-08-09</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.1" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.5.0">
+      <h2>v1.5.0 <span class="meta">· 2026-08-09</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.0" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.4.2">
+      <h2>v1.4.2 <span class="meta">· 2026-07-06</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.4.2" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.4.1">
+      <h2>v1.4.1 <span class="meta">· 2026-07-06</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.4.1" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.4.0">
+      <h2>v1.4.0 <span class="meta">· 2026-07-06</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.4.0" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.2.1">
+      <h2>v1.2.1 <span class="meta">· 2026-07-03</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.2.1" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.2.0">
+      <h2>v1.2.0 <span class="meta">· 2026-07-03</span></h2>
+<p>Build release — bug fixes, catalog and dependency updates.</p>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.2.0" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <div class="cta-band">
+      <h2 style="margin-top:0">Get the latest build</h2>
+      <p>Free and open-source. Windows, macOS and Linux.</p>
+      <a class="btn btn-primary btn-lg" href="../#download">Download ShadowSecurityScanner</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../">Home</a>
+      <a href="../guides/">Guides</a>
+      <a href="../kev/">KEV digest</a>
+      <a href="../changelog/">Changelog</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>
