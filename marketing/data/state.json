@@ -2,9 +2,12 @@
   "announced_release": "v1.5.6",
   "kev_announced": [
     "2026-w40",
-    "2026-w41"
+    "2026-w41",
+    "2026-w42"
   ],
-  "last_daily": "2026-10-18",
+  "last_daily": "2026-10-19",
+  "last_kev": "2026-w43",
+  "last_report": "2026-w43",
   "mentions_seen": [
     "hn-50058585",
     "hn-50083255",
@@ -12,5 +15,5 @@
     "hn-50125681",
     "hn-50124600"
   ],
-  "mentions_since": 1792322401
+  "mentions_since": 1792416837
 }

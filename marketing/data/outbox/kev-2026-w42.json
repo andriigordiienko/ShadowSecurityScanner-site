@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-10-19T13:33:58+00:00",
+  "description": "9 vulnerabilities CISA added to KEV in week 42 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+  "done": {},
+  "id": "kev-2026-w42",
+  "long": "CISA KEV weekly digest, Oct 12–18, 2026: 9 newly confirmed exploited vulnerabilities.\n\nFix first:\n• CVE-2026-104935 — Ivanti Connect Secure, EPSS 26%\n• CVE-2026-105134 — AhsayCBS, EPSS 5%\n• CVE-2026-76519 — Cisco Secure Email Gateway, EPSS 2%\n• CVE-2026-96951 — Microsoft Windows, EPSS 2%\n• CVE-2026-0322 — Palo Alto Networks PAN-OS, EPSS 1%\n…and 4 more.\n\nFull table with EPSS, public exploits, ransomware use and CISA due dates:",
+  "short": "CISA added 9 exploited vulns to KEV last week (Oct 12–18, 2026). Top risk: CVE-2026-104935 (Ivanti), CVE-2026-105134 (Ahsay). EPSS, exploits and deadlines:",
+  "tags": [
+    "CISA",
+    "KEV",
+    "infosec",
+    "vulnerabilitymanagement"
+  ],
+  "title": "CISA KEV weekly digest: Oct 12–18, 2026 (9 new exploited CVEs)",
+  "url": "https://shadowsecurityscanner.com/kev/2026-w42/"
+}

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
+  <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
+  <title>CISA KEV weekly digest: Oct 12–18, 2026 (9 new exploited CVEs)</title>
+  <meta name="description" content="9 vulnerabilities CISA added to KEV in week 42 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://shadowsecurityscanner.com/kev/2026-w42/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CISA KEV weekly digest: Oct 12–18, 2026 (9 new exploited CVEs)" />
+  <meta property="og:description" content="9 vulnerabilities CISA added to KEV in week 42 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta property="og:url" content="https://shadowsecurityscanner.com/kev/2026-w42/" />
+  <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "CISA KEV weekly digest: Oct 12–18, 2026 (9 new exploited CVEs)",
+      "description": "9 vulnerabilities CISA added to KEV in week 42 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+      "datePublished": "2026-10-19",
+      "author": {
+        "@type": "Person",
+        "name": "AndriiGordiienko"
+      },
+      "image": "https://shadowsecurityscanner.com/assets/og-image.png",
+      "mainEntityOfPage": "https://shadowsecurityscanner.com/kev/2026-w42/",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-104935"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-105134"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-76519"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-96951"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-0322"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-102764"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2025-61624"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-105133"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-21589"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shadowsecurityscanner.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "KEV digest",
+          "item": "https://shadowsecurityscanner.com/kev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Week 42",
+          "item": "https://shadowsecurityscanner.com/kev/2026-w42/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="ShadowSecurityScanner home">
+      <img src="../../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../../kev/">KEV digest</a>
+      <a class="btn btn-primary" href="../../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../kev/">KEV digest</a><span>/</span>Week 42</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">KEV weekly digest · week 42</span>
+      <h1>Known exploited vulnerabilities: Oct 12–18, 2026</h1>
+      <p class="meta">9 new CISA KEV entries · EPSS as of 2026-10-19</p>
+    </div>
+    <p>CISA added <strong>9</strong> vulnerabilities to the Known Exploited Vulnerabilities catalog between Oct 12–18, 2026: each one is confirmed to be exploited in the wild. 0 are linked to ransomware campaigns, 0 have a public exploit, and 1 has an EPSS score of 10% or more. The catalog now holds 1748 entries.</p>
+    <h2>Fix-first order</h2>
+    <p>Sorted the way <a href="../../guides/what-is-epss-and-kev/">exploit-aware triage</a> works:
+    ransomware-linked first, then by EPSS exploit probability.</p>
+    <div class="table-wrap" style="margin:0 0 20px">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">CVE</th><th scope="col">Product</th><th scope="col">EPSS</th><th scope="col">Public exploit</th><th scope="col">Ransomware</th><th scope="col">CISA due</th><th scope="col">Scanner</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-104935">CVE-2026-104935</a></th>
+            <td>Ivanti Connect Secure</td>
+            <td>26.0% <span class="meta">(p98)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-16</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-105134">CVE-2026-105134</a></th>
+            <td>AhsayCBS</td>
+            <td>4.8% <span class="meta">(p92)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-17</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-76519">CVE-2026-76519</a></th>
+            <td>Cisco Secure Email Gateway</td>
+            <td>1.6% <span class="meta">(p75)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-17</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-96951">CVE-2026-96951</a></th>
+            <td>Microsoft Windows</td>
+            <td>1.5% <span class="meta">(p74)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-16</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-0322">CVE-2026-0322</a></th>
+            <td>Palo Alto Networks PAN-OS</td>
+            <td>1.2% <span class="meta">(p68)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-17</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-102764">CVE-2026-102764</a></th>
+            <td>BeyondTrust Remote Support</td>
+            <td>1.2% <span class="meta">(p67)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-19</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2025-61624">CVE-2025-61624</a></th>
+            <td>Fortinet Multiple Products</td>
+            <td>1.1% <span class="meta">(p65)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-19</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-105133">CVE-2026-105133</a></th>
+            <td>AhsayCBS</td>
+            <td>0.9% <span class="meta">(p58)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-17</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-21589">CVE-2026-21589</a></th>
+            <td>Atlassian Multiple Products</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-18</td>
+            <td>Catalog</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta"><strong>Scanner</strong>: “Active check” means ShadowSecurityScanner ships a
+    network or web probe for this CVE; “Catalog” means it is tracked in the KEV-synced audit catalog
+    and flagged when version fingerprinting matches.</p>
+    <h2 id="cve-2026-104935">CVE-2026-104935 — Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability</h2>
+    <p>Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-13 · <strong>CISA due date:</strong> 2026-10-16</li>
+      <li><strong>EPSS:</strong> 26.0% <span class="meta">(p98)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-290</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-104935" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-105134">CVE-2026-105134 — Ahsay AhsayCBS Command Injection Vulnerability</h2>
+    <p>Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-14 · <strong>CISA due date:</strong> 2026-10-17</li>
+      <li><strong>EPSS:</strong> 4.8% <span class="meta">(p92)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-77, CWE-78</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update" rel="noreferrer nofollow">ahsay.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-105134" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-76519">CVE-2026-76519 — Cisco Secure Email Gateway Relative Path Traversal Vulnerability</h2>
+    <p>Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-14 · <strong>CISA due date:</strong> 2026-10-17</li>
+      <li><strong>EPSS:</strong> 1.6% <span class="meta">(p75)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-23</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp" rel="noreferrer nofollow">sec.cloudapps.cisco.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76519" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-96951">CVE-2026-96951 — Microsoft Windows Command Injection Vulnerability</h2>
+    <p>Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-13 · <strong>CISA due date:</strong> 2026-10-16</li>
+      <li><strong>EPSS:</strong> 1.5% <span class="meta">(p74)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-77</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951" rel="noreferrer nofollow">msrc.microsoft.com</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96951" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-0322">CVE-2026-0322 — Palo Alto Networks PAN-OS Code Injection Vulnerability</h2>
+    <p>Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-14 · <strong>CISA due date:</strong> 2026-10-17</li>
+      <li><strong>EPSS:</strong> 1.2% <span class="meta">(p68)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-94</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://security.paloaltonetworks.com/CVE-2026-0322" rel="noreferrer nofollow">security.paloaltonetworks.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0322" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-102764">CVE-2026-102764 — BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability</h2>
+    <p>BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-16 · <strong>CISA due date:</strong> 2026-10-19</li>
+      <li><strong>EPSS:</strong> 1.2% <span class="meta">(p67)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-290</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://www.beyondtrust.com/trust-center/security-advisories/bt26-05" rel="noreferrer nofollow">beyondtrust.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102764" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2025-61624">CVE-2025-61624 — Fortinet Multiple Products Path Traversal Vulnerability</h2>
+    <p>FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-16 · <strong>CISA due date:</strong> 2026-10-19</li>
+      <li><strong>EPSS:</strong> 1.1% <span class="meta">(p65)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-22</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://fortiguard.fortinet.com/psirt/FG-IR-26-122" rel="noreferrer nofollow">fortiguard.fortinet.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61624" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-105133">CVE-2026-105133 — Ahsay AhsayCBS Improper Authentication Vulnerability</h2>
+    <p>Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-14 · <strong>CISA due date:</strong> 2026-10-17</li>
+      <li><strong>EPSS:</strong> 0.9% <span class="meta">(p58)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-287</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update" rel="noreferrer nofollow">ahsay.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-105133" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-21589">CVE-2026-21589 — Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability</h2>
+    <p>Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-15 · <strong>CISA due date:</strong> 2026-10-18</li>
+      <li><strong>EPSS:</strong> — · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-552</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com" rel="noreferrer nofollow">confluence.atlassian.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21589" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2>How to find these on your network</h2>
+    <p>Every KEV entry is flagged automatically in ShadowSecurityScanner: findings are sorted KEV →
+    EPSS → severity, and a daily catalog update pulls new KEV entries without a reinstall. See
+    <a href="../../guides/how-to-run-a-network-vulnerability-scan/">how to run a network vulnerability scan</a>.</p>
+    <div class="cta-band">
+      <h2 style="margin-top:0">Scan for known-exploited vulnerabilities</h2>
+      <p>Free and open-source, with CISA KEV and EPSS built in.</p>
+      <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
+    </div>
+    <p class="meta">Sources: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noreferrer">CISA KEV</a>,
+    <a href="https://www.first.org/epss/" rel="noreferrer">FIRST.org EPSS</a>, Exploit-DB, Metasploit. ·
+    <a href="../">All weekly digests</a></p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../../">Home</a>
+      <a href="../../guides/">Guides</a>
+      <a href="../../kev/">KEV digest</a>
+      <a href="../../changelog/">Changelog</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

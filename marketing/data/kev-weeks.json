@@ -8,5 +8,10 @@
     "count": 5,
     "span": "Oct 5–11, 2026",
     "top": "CVE-2015-3306 (ProFTPD)"
+  },
+  "2026-w42": {
+    "count": 9,
+    "span": "Oct 12–18, 2026",
+    "top": "CVE-2026-104935 (Ivanti Connect Secure)"
   }
 }
