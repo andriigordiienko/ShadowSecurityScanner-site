@@ -7,7 +7,7 @@
 - **Name:** ShadowSecurityScanner (also "Shadow Security Scanner", "SSS")
 - **Category:** Penetration testing tool / network vulnerability scanner
 - **License:** MIT (open source, free)
-- **Latest release:** 1.5.6 (2026-10-06) — changelog: https://shadowsecurityscanner.com/changelog/
+- **Latest release:** 1.5.7 (2026-10-23) — changelog: https://shadowsecurityscanner.com/changelog/
 - **Platforms:** Windows 10/11, macOS 11+ (Apple Silicon), Linux (x64 / ARM64)
 - **Architecture:** Single self-contained desktop binary; data stored locally; no cloud, no telemetry
 - **Built with:** Go, React, Wails, SQLite (no CGO)
