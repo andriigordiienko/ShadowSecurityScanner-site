@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-10-26T13:17:32+00:00",
+  "description": "8 vulnerabilities CISA added to KEV in week 43 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+  "done": {},
+  "id": "kev-2026-w43",
+  "long": "CISA KEV weekly digest, Oct 19–25, 2026: 8 newly confirmed exploited vulnerabilities.\n\nFix first:\n• CVE-2026-110447 — Collabora Online – Built-in CODE Server, EPSS 12%\n• CVE-2026-106931 — EG Secure Solutions SiteGuard Server Edition, EPSS 3%\n• CVE-2026-96654 — Plex Media Server, EPSS 2%\n• CVE-2026-96652 — Plex Media Server, EPSS 2%\n• CVE-2026-96656 — Plex Media Server, EPSS 2%\n…and 3 more.\n\nFull table with EPSS, public exploits, ransomware use and CISA due dates:",
+  "short": "CISA added 8 exploited vulns to KEV last week (Oct 19–25, 2026). Top risk: CVE-2026-110447 (Collabora), CVE-2026-106931 (EG Secure Solutions). EPSS, exploits and deadlines:",
+  "tags": [
+    "CISA",
+    "KEV",
+    "infosec",
+    "vulnerabilitymanagement"
+  ],
+  "title": "CISA KEV weekly digest: Oct 19–25, 2026 (8 new exploited CVEs)",
+  "url": "https://shadowsecurityscanner.com/kev/2026-w43/"
+}

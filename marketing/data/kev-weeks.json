@@ -13,5 +13,10 @@
     "count": 9,
     "span": "Oct 12–18, 2026",
     "top": "CVE-2026-104935 (Ivanti Connect Secure)"
+  },
+  "2026-w43": {
+    "count": 8,
+    "span": "Oct 19–25, 2026",
+    "top": "CVE-2026-110447 (Collabora Online – Built-in CODE Server)"
   }
 }

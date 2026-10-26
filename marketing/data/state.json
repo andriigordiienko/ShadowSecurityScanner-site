@@ -3,11 +3,12 @@
   "kev_announced": [
     "2026-w40",
     "2026-w41",
-    "2026-w42"
+    "2026-w42",
+    "2026-w43"
   ],
-  "last_daily": "2026-10-25",
-  "last_kev": "2026-w43",
-  "last_report": "2026-w43",
+  "last_daily": "2026-10-26",
+  "last_kev": "2026-w44",
+  "last_report": "2026-w44",
   "mentions_seen": [
     "hn-50058585",
     "hn-50083255",
@@ -19,5 +20,5 @@
     "hn-50194705",
     "hn-50197567"
   ],
-  "mentions_since": 1792928623
+  "mentions_since": 1793020651
 }

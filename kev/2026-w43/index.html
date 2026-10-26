@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
+  <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
+  <title>CISA KEV weekly digest: Oct 19–25, 2026 (8 new exploited CVEs)</title>
+  <meta name="description" content="8 vulnerabilities CISA added to KEV in week 43 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://shadowsecurityscanner.com/kev/2026-w43/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CISA KEV weekly digest: Oct 19–25, 2026 (8 new exploited CVEs)" />
+  <meta property="og:description" content="8 vulnerabilities CISA added to KEV in week 43 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta property="og:url" content="https://shadowsecurityscanner.com/kev/2026-w43/" />
+  <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "CISA KEV weekly digest: Oct 19–25, 2026 (8 new exploited CVEs)",
+      "description": "8 vulnerabilities CISA added to KEV in week 43 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+      "datePublished": "2026-10-26",
+      "author": {
+        "@type": "Person",
+        "name": "AndriiGordiienko"
+      },
+      "image": "https://shadowsecurityscanner.com/assets/og-image.png",
+      "mainEntityOfPage": "https://shadowsecurityscanner.com/kev/2026-w43/",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-110447"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-106931"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-96654"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-96652"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-96656"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-96655"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-114625"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-110936"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shadowsecurityscanner.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "KEV digest",
+          "item": "https://shadowsecurityscanner.com/kev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Week 43",
+          "item": "https://shadowsecurityscanner.com/kev/2026-w43/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="ShadowSecurityScanner home">
+      <img src="../../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../../kev/">KEV digest</a>
+      <a class="btn btn-primary" href="../../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../kev/">KEV digest</a><span>/</span>Week 43</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">KEV weekly digest · week 43</span>
+      <h1>Known exploited vulnerabilities: Oct 19–25, 2026</h1>
+      <p class="meta">8 new CISA KEV entries · EPSS as of 2026-10-26</p>
+    </div>
+    <p>CISA added <strong>8</strong> vulnerabilities to the Known Exploited Vulnerabilities catalog between Oct 19–25, 2026: each one is confirmed to be exploited in the wild. 0 are linked to ransomware campaigns, 0 have a public exploit, and 1 has an EPSS score of 10% or more. The catalog now holds 1756 entries.</p>
+    <h2>Fix-first order</h2>
+    <p>Sorted the way <a href="../../guides/what-is-epss-and-kev/">exploit-aware triage</a> works:
+    ransomware-linked first, then by EPSS exploit probability.</p>
+    <div class="table-wrap" style="margin:0 0 20px">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">CVE</th><th scope="col">Product</th><th scope="col">EPSS</th><th scope="col">Public exploit</th><th scope="col">Ransomware</th><th scope="col">CISA due</th><th scope="col">Scanner</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-110447">CVE-2026-110447</a></th>
+            <td>Collabora Online – Built-in CODE Server</td>
+            <td>12.3% <span class="meta">(p96)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-26</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-106931">CVE-2026-106931</a></th>
+            <td>EG Secure Solutions SiteGuard Server Edition</td>
+            <td>2.5% <span class="meta">(p85)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-23</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-96654">CVE-2026-96654</a></th>
+            <td>Plex Media Server</td>
+            <td>1.9% <span class="meta">(p80)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-23</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-96652">CVE-2026-96652</a></th>
+            <td>Plex Media Server</td>
+            <td>1.8% <span class="meta">(p79)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-11-03</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-96656">CVE-2026-96656</a></th>
+            <td>Plex Media Server</td>
+            <td>1.8% <span class="meta">(p78)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-23</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-96655">CVE-2026-96655</a></th>
+            <td>Plex Media Server</td>
+            <td>1.6% <span class="meta">(p76)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-11-03</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-114625">CVE-2026-114625</a></th>
+            <td>Arista VeloCloud Orchestrator</td>
+            <td>1.0% <span class="meta">(p63)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-10-26</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-110936">CVE-2026-110936</a></th>
+            <td>Siemens Software Center</td>
+            <td>1.0% <span class="meta">(p61)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-11-03</td>
+            <td>Catalog</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta"><strong>Scanner</strong>: “Active check” means ShadowSecurityScanner ships a
+    network or web probe for this CVE; “Catalog” means it is tracked in the KEV-synced audit catalog
+    and flagged when version fingerprinting matches.</p>
+    <h2 id="cve-2026-110447">CVE-2026-110447 — Collabora Online – Built-in CODE Server OS Command Injection Vulnerability</h2>
+    <p>Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn&#x27;t running.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-23 · <strong>CISA due date:</strong> 2026-10-26</li>
+      <li><strong>EPSS:</strong> 12.3% <span class="meta">(p96)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-78</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://help.nextcloud.com/t/to-collabora-built-in-user-update-asap/250516" rel="noreferrer nofollow">help.nextcloud.com</a> · <a href="https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh" rel="noreferrer nofollow">github.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110447" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-106931">CVE-2026-106931 — EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability</h2>
+    <p>EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-20 · <strong>CISA due date:</strong> 2026-10-23</li>
+      <li><strong>EPSS:</strong> 2.5% <span class="meta">(p85)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-78</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://www.eg-secure.co.jp/siteguard/news/alert-202610-1" rel="noreferrer nofollow">eg-secure.co.jp</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-106931" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-96654">CVE-2026-96654 — Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability</h2>
+    <p>Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins&#x27; functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-20 · <strong>CISA due date:</strong> 2026-10-23</li>
+      <li><strong>EPSS:</strong> 1.9% <span class="meta">(p80)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-84</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319" rel="noreferrer nofollow">forums.plex.tv</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96654" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-96652">CVE-2026-96652 — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability</h2>
+    <p>Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the &#x27;protocol&#x27; parameter and force the Plex server to POST to the attacker&#x27;s chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. </p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-20 · <strong>CISA due date:</strong> 2026-11-03</li>
+      <li><strong>EPSS:</strong> 1.8% <span class="meta">(p79)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-918</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319" rel="noreferrer nofollow">forums.plex.tv</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96652" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-96656">CVE-2026-96656 — Plex Media Server External Control of File Name or Path Vulnerability</h2>
+    <p>Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-20 · <strong>CISA due date:</strong> 2026-10-23</li>
+      <li><strong>EPSS:</strong> 1.8% <span class="meta">(p78)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-73</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319" rel="noreferrer nofollow">forums.plex.tv</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96656" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-96655">CVE-2026-96655 — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability</h2>
+    <p>Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the &#x27;/video/:/transcode/universal&#x27; path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-20 · <strong>CISA due date:</strong> 2026-11-03</li>
+      <li><strong>EPSS:</strong> 1.6% <span class="meta">(p76)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-918</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319" rel="noreferrer nofollow">forums.plex.tv</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96655" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-114625">CVE-2026-114625 — Arista VeloCloud Orchestrator SQL Injection Vulnerability</h2>
+    <p>Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-23 · <strong>CISA due date:</strong> 2026-10-26</li>
+      <li><strong>EPSS:</strong> 1.0% <span class="meta">(p63)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-89</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://www.arista.com/en/support/advisories-notices/security-advisory/24838-security-advisory-0199" rel="noreferrer nofollow">arista.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-114625" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-110936">CVE-2026-110936 — Siemens Software Center Uncontrolled Search Path Element Vulnerability</h2>
+    <p>Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-10-20 · <strong>CISA due date:</strong> 2026-11-03</li>
+      <li><strong>EPSS:</strong> 1.0% <span class="meta">(p61)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-427</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://productcert.siemens.com/productcert/html/ssa-580366.html" rel="noreferrer nofollow">productcert.siemens.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110936" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2>How to find these on your network</h2>
+    <p>Every KEV entry is flagged automatically in ShadowSecurityScanner: findings are sorted KEV →
+    EPSS → severity, and a daily catalog update pulls new KEV entries without a reinstall. See
+    <a href="../../guides/how-to-run-a-network-vulnerability-scan/">how to run a network vulnerability scan</a>.</p>
+    <div class="cta-band">
+      <h2 style="margin-top:0">Scan for known-exploited vulnerabilities</h2>
+      <p>Free and open-source, with CISA KEV and EPSS built in.</p>
+      <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
+    </div>
+    <p class="meta">Sources: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noreferrer">CISA KEV</a>,
+    <a href="https://www.first.org/epss/" rel="noreferrer">FIRST.org EPSS</a>, Exploit-DB, Metasploit. ·
+    <a href="../">All weekly digests</a></p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../../">Home</a>
+      <a href="../../guides/">Guides</a>
+      <a href="../../kev/">KEV digest</a>
+      <a href="../../changelog/">Changelog</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

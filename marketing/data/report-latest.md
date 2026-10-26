@@ -1,13 +1,13 @@
-## Неделя 2026-10-12 — 2026-10-18
+## Неделя 2026-10-19 — 2026-10-25
 
 | Метрика | Значение (Δ за неделю) |
 |---|---|
-| ⭐ Звёзды | 11 (+0) |
-| ⬇️ Загрузки, всего | 772 (+100) |
-| ⬇️ Windows / macOS / Linux | 475 (+48) / 85 (+12) / 212 (+40) |
-| 🏷 Последний релиз | v1.5.6: 186 загрузок |
+| ⭐ Звёзды | 13 (+2) |
+| ⬇️ Загрузки, всего | 894 (+122) |
+| ⬇️ Windows / macOS / Linux | 539 (+64) / 100 (+15) / 255 (+43) |
+| 🏷 Последний релиз | v1.5.7: 53 загрузок |
 | 🍴 Форки / 👀 watchers | 0 (+0) / 0 (+0) |
-| 📈 Просмотры репозитория | 0 (прошлая неделя: 123) |
+| 📈 Просмотры репозитория | 0 (прошлая неделя: 0) |
 
 ### Источники трафика в репозиторий (14 дней)
 
@@ -22,14 +22,13 @@
 ### Публикации
 
 - за неделю ничего не опубликовано
-- в очереди: kev-2026-w42
+- в очереди: kev-2026-w42, kev-2026-w43, release-v1.5.7
 
-### Упоминания и обсуждения (5)
+### Упоминания и обсуждения (4)
 
-- [opportunity] HN: [comment on: The Unreasonable Effectiveness of Vex in NixOS](https://news.ycombinator.com/item?id=50058585)
-- [opportunity] HN: [comment on: I posted to HN, and then my website was flooded with AI bot traffic](https://news.ycombinator.com/item?id=50078258)
-- [opportunity] HN: [comment on: I posted to HN, and then my website was flooded with AI bot traffic](https://news.ycombinator.com/item?id=50083255)
-- [opportunity] HN: [Tell HN: Anthropic found 36 bugs (6 CVEs) in Pion, OpenAI missed them](https://news.ycombinator.com/item?id=50124600)
-- [opportunity] HN: [comment on: Tell HN: Anthropic found 36 bugs (6 CVEs) in Pion, OpenAI missed them](https://news.ycombinator.com/item?id=50125681)
+- [opportunity] HN: [comment on: Token-maxxing is dead, OpenRouter's token usage plateaus](https://news.ycombinator.com/item?id=50161160)
+- [opportunity] HN: [comment on: Token-maxxing is dead, OpenRouter's token usage plateaus](https://news.ycombinator.com/item?id=50164705)
+- [opportunity] HN: [comment on: Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure](https://news.ycombinator.com/item?id=50194705)
+- [opportunity] HN: [comment on: Cve.now: A free CVE feed for agents](https://news.ycombinator.com/item?id=50197567)
 
 Сайт: https://shadowsecurityscanner.com/ · История: `marketing/data/` · План: `marketing/README.md`
