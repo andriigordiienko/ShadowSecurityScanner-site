@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-10-27T22:22:55+00:00",
+  "description": "Free, open-source network vulnerability scanner that ranks findings by real-world exploitability (EPSS + CISA KEV). Windows, macOS, Linux. No cloud, no telemetry. MIT.",
+  "done": {},
+  "id": "release-v1.5.8",
+  "long": "ShadowSecurityScanner v1.5.8 is out.\n\nWhat's new:\n• Treat a hyphenated hostname as a host, not a range\n\nFree, open-source network vulnerability scanner that ranks findings by real-world exploitability (FIRST.org EPSS + CISA KEV). Single desktop app for Windows, macOS and Linux — no cloud, no telemetry, MIT-licensed.\n\nFull changelog: https://shadowsecurityscanner.com/changelog/#v1.5.8",
+  "short": "ShadowSecurityScanner v1.5.8 is out — free, open-source vuln scanner with EPSS + CISA KEV prioritisation.\n\nNew: Treat a hyphenated hostname as a host, not a range",
+  "tags": [
+    "infosec",
+    "cybersecurity",
+    "opensource",
+    "vulnerabilitymanagement"
+  ],
+  "title": "ShadowSecurityScanner v1.5.8",
+  "url": "https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.5.8"
+}
