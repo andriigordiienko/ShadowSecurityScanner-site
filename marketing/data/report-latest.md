@@ -1,12 +1,12 @@
-## Неделя 2026-10-19 — 2026-10-25
+## Неделя 2026-10-26 — 2026-11-01
 
 | Метрика | Значение (Δ за неделю) |
 |---|---|
-| ⭐ Звёзды | 13 (+2) |
-| ⬇️ Загрузки, всего | 894 (+122) |
-| ⬇️ Windows / macOS / Linux | 539 (+64) / 100 (+15) / 255 (+43) |
-| 🏷 Последний релиз | v1.5.7: 53 загрузок |
-| 🍴 Форки / 👀 watchers | 0 (+0) / 0 (+0) |
+| ⭐ Звёзды | 14 (+1) |
+| ⬇️ Загрузки, всего | 1028 (+134) |
+| ⬇️ Windows / macOS / Linux | 615 (+76) / 116 (+16) / 297 (+42) |
+| 🏷 Последний релиз | v1.5.8: 87 загрузок |
+| 🍴 Форки / 👀 watchers | 2 (+2) / 0 (+0) |
 | 📈 Просмотры репозитория | 0 (прошлая неделя: 0) |
 
 ### Источники трафика в репозиторий (14 дней)
@@ -22,13 +22,12 @@
 ### Публикации
 
 - за неделю ничего не опубликовано
-- в очереди: kev-2026-w42, kev-2026-w43, release-v1.5.7
+- в очереди: kev-2026-w42, kev-2026-w43, kev-2026-w44, release-v1.5.7, release-v1.5.8
 
-### Упоминания и обсуждения (4)
+### Упоминания и обсуждения (3)
 
-- [opportunity] HN: [comment on: Token-maxxing is dead, OpenRouter's token usage plateaus](https://news.ycombinator.com/item?id=50161160)
-- [opportunity] HN: [comment on: Token-maxxing is dead, OpenRouter's token usage plateaus](https://news.ycombinator.com/item?id=50164705)
-- [opportunity] HN: [comment on: Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure](https://news.ycombinator.com/item?id=50194705)
-- [opportunity] HN: [comment on: Cve.now: A free CVE feed for agents](https://news.ycombinator.com/item?id=50197567)
+- [opportunity] HN: [comment on: Concerning behavior from a popular open-weight AI model](https://news.ycombinator.com/item?id=50249913)
+- [opportunity] HN: [comment on: The $6.3B Binance Hack Was Pulled Off in Just 20 Minutes](https://news.ycombinator.com/item?id=50304697)
+- [opportunity] HN: [SBoM creator and Vulnerability scanner (Threatclaw.ai)](https://news.ycombinator.com/item?id=50316982)
 
 Сайт: https://shadowsecurityscanner.com/ · История: `marketing/data/` · План: `marketing/README.md`

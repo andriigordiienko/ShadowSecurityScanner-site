@@ -18,5 +18,10 @@
     "count": 8,
     "span": "Oct 19–25, 2026",
     "top": "CVE-2026-110447 (Collabora Online – Built-in CODE Server)"
+  },
+  "2026-w44": {
+    "count": 10,
+    "span": "Oct 26 – Nov 1, 2026",
+    "top": "CVE-2026-109618 (PHP Group PHP)"
   }
 }

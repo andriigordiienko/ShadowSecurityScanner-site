@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-11-02T19:34:55+00:00",
+  "description": "10 vulnerabilities CISA added to KEV in week 44 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+  "done": {},
+  "id": "kev-2026-w44",
+  "long": "CISA KEV weekly digest, Oct 26 – Nov 1, 2026: 10 newly confirmed exploited vulnerabilities.\n\nFix first:\n• CVE-2026-109618 — PHP Group PHP, EPSS 100%\n• CVE-2026-109619 — PHP Group PHP, EPSS 100%\n• CVE-2026-111497 — Google Brotli, EPSS 83%\n• CVE-2026-48356 — Adobe Commerce and Magento, EPSS 45%\n• CVE-2026-97229 — GitLab Community Edition and Enterprise Edition, EPSS 27%\n…and 5 more.\n\nFull table with EPSS, public exploits, ransomware use and CISA due dates:",
+  "short": "CISA added 10 exploited vulns to KEV last week (Oct 26 – Nov 1, 2026). Top risk: CVE-2026-109618 (PHP Group), CVE-2026-109619 (PHP Group). EPSS, exploits and deadlines:",
+  "tags": [
+    "CISA",
+    "KEV",
+    "infosec",
+    "vulnerabilitymanagement"
+  ],
+  "title": "CISA KEV weekly digest: Oct 26 – Nov 1, 2026 (10 new exploited CVEs)",
+  "url": "https://shadowsecurityscanner.com/kev/2026-w44/"
+}
