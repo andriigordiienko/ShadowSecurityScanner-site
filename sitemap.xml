@@ -68,7 +68,7 @@
   </url>
   <url>
     <loc>https://shadowsecurityscanner.com/kev/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -93,6 +93,12 @@
   <url>
     <loc>https://shadowsecurityscanner.com/kev/2026-w44/</loc>
     <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://shadowsecurityscanner.com/kev/2026-w45/</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

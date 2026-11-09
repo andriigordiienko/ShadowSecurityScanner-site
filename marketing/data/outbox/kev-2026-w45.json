@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-11-09T11:46:43+00:00",
+  "description": "3 vulnerabilities CISA added to KEV in week 45 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+  "done": {},
+  "id": "kev-2026-w45",
+  "long": "CISA KEV weekly digest, Nov 2–8, 2026: 3 newly confirmed exploited vulnerabilities.\n\nFix first:\n• CVE-2024-27834 — Apple Multiple Products, EPSS 2%\n• CVE-2026-119977 — WordPress Core, EPSS 1%\n• CVE-2026-19868 — SonicWall SonicOS SSLVPN, EPSS 1%\n\nFull table with EPSS, public exploits, ransomware use and CISA due dates:",
+  "short": "CISA added 3 exploited vulns to KEV last week (Nov 2–8, 2026). Top risk: CVE-2024-27834 (Apple), CVE-2026-119977 (WordPress). EPSS, exploits and deadlines:",
+  "tags": [
+    "CISA",
+    "KEV",
+    "infosec",
+    "vulnerabilitymanagement"
+  ],
+  "title": "CISA KEV weekly digest: Nov 2–8, 2026 (3 new exploited CVEs)",
+  "url": "https://shadowsecurityscanner.com/kev/2026-w45/"
+}

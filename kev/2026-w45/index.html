@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
+  <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
+  <title>CISA KEV weekly digest: Nov 2–8, 2026 (3 new exploited CVEs)</title>
+  <meta name="description" content="3 vulnerabilities CISA added to KEV in week 45 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta name="author" content="AndriiGordiienko" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#0a0e16" />
+  <link rel="canonical" href="https://shadowsecurityscanner.com/kev/2026-w45/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="CISA KEV weekly digest: Nov 2–8, 2026 (3 new exploited CVEs)" />
+  <meta property="og:description" content="3 vulnerabilities CISA added to KEV in week 45 of 2026, with EPSS scores, public exploits, ransomware use and due dates." />
+  <meta property="og:url" content="https://shadowsecurityscanner.com/kev/2026-w45/" />
+  <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": "CISA KEV weekly digest: Nov 2–8, 2026 (3 new exploited CVEs)",
+      "description": "3 vulnerabilities CISA added to KEV in week 45 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+      "datePublished": "2026-11-09",
+      "author": {
+        "@type": "Person",
+        "name": "AndriiGordiienko"
+      },
+      "image": "https://shadowsecurityscanner.com/assets/og-image.png",
+      "mainEntityOfPage": "https://shadowsecurityscanner.com/kev/2026-w45/",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "CVE-2024-27834"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-119977"
+        },
+        {
+          "@type": "Thing",
+          "name": "CVE-2026-19868"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shadowsecurityscanner.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "KEV digest",
+          "item": "https://shadowsecurityscanner.com/kev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Week 45",
+          "item": "https://shadowsecurityscanner.com/kev/2026-w45/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../" aria-label="ShadowSecurityScanner home">
+      <img src="../../assets/logo.svg" alt="" width="34" height="34" />
+      <span>Shadow<strong>Security</strong>Scanner</span>
+    </a>
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="../../kev/">KEV digest</a>
+      <a class="btn btn-primary" href="../../#download">Download</a>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span>/</span><a href="../../kev/">KEV digest</a><span>/</span>Week 45</nav>
+
+  <article class="article">
+    <div class="article-head">
+      <span class="eyebrow">KEV weekly digest · week 45</span>
+      <h1>Known exploited vulnerabilities: Nov 2–8, 2026</h1>
+      <p class="meta">3 new CISA KEV entries · EPSS as of 2026-11-09</p>
+    </div>
+    <p>CISA added <strong>3</strong> vulnerabilities to the Known Exploited Vulnerabilities catalog between Nov 2–8, 2026: each one is confirmed to be exploited in the wild. 0 are linked to ransomware campaigns, 0 have a public exploit, and 0 have an EPSS score of 10% or more. The catalog now holds 1769 entries.</p>
+    <h2>Fix-first order</h2>
+    <p>Sorted the way <a href="../../guides/what-is-epss-and-kev/">exploit-aware triage</a> works:
+    ransomware-linked first, then by EPSS exploit probability.</p>
+    <div class="table-wrap" style="margin:0 0 20px">
+      <table class="cmp">
+        <thead>
+          <tr><th scope="col">CVE</th><th scope="col">Product</th><th scope="col">EPSS</th><th scope="col">Public exploit</th><th scope="col">Ransomware</th><th scope="col">CISA due</th><th scope="col">Scanner</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2024-27834">CVE-2024-27834</a></th>
+            <td>Apple Multiple Products</td>
+            <td>1.5% <span class="meta">(p74)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-11-18</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-119977">CVE-2026-119977</a></th>
+            <td>WordPress Core</td>
+            <td>1.2% <span class="meta">(p67)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-11-06</td>
+            <td>Catalog</td>
+          </tr>
+          <tr>
+            <th scope="row" style="white-space:nowrap"><a href="#cve-2026-19868">CVE-2026-19868</a></th>
+            <td>SonicWall SonicOS SSLVPN</td>
+            <td>0.6% <span class="meta">(p50)</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td style="white-space:nowrap">2026-11-20</td>
+            <td>Catalog</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta"><strong>Scanner</strong>: “Active check” means ShadowSecurityScanner ships a
+    network or web probe for this CVE; “Catalog” means it is tracked in the KEV-synced audit catalog
+    and flagged when version fingerprinting matches.</p>
+    <h2 id="cve-2024-27834">CVE-2024-27834 — Apple Multiple Products Improper Authentication Vulnerability</h2>
+    <p>Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-11-04 · <strong>CISA due date:</strong> 2026-11-18</li>
+      <li><strong>EPSS:</strong> 1.5% <span class="meta">(p74)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-287</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://support.apple.com/en-us/120896" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/120898" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/120901" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/120902" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/120903" rel="noreferrer nofollow">support.apple.com</a> · <a href="https://support.apple.com/en-us/120905" rel="noreferrer nofollow">support.apple.com</a></li>
+    </ul>
+    <h2 id="cve-2026-119977">CVE-2026-119977 — WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability</h2>
+    <p>WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-11-03 · <strong>CISA due date:</strong> 2026-11-06</li>
+      <li><strong>EPSS:</strong> 1.2% <span class="meta">(p67)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-367</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://wordpress.org/news/2026/10/wordpress-7-1-4" rel="noreferrer nofollow">wordpress.org</a> · <a href="https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-core/wordpress-core-470-713-unauthenticated-upgrade-window-staged-installer-remote-code-execution" rel="noreferrer nofollow">wordfence.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119977" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2 id="cve-2026-19868">CVE-2026-19868 — SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability</h2>
+    <p>SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).</p>
+    <ul>
+      <li><strong>Added to KEV:</strong> 2026-11-06 · <strong>CISA due date:</strong> 2026-11-20</li>
+      <li><strong>EPSS:</strong> 0.6% <span class="meta">(p50)</span> · <strong>Public exploit:</strong> none known · <strong>Ransomware use:</strong> not known</li>
+      <li><strong>Weakness:</strong> CWE-308</li>
+      <li><strong>Required action:</strong> Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset&#x27;s internet exposure and ensuring adherence to BOD 26-04 patching guidelines.</li>
+      <li><strong>References:</strong> <a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0014" rel="noreferrer nofollow">psirt.global.sonicwall.com</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk" rel="noreferrer nofollow">cisa.gov</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19868" rel="noreferrer nofollow">nvd.nist.gov</a></li>
+    </ul>
+    <h2>How to find these on your network</h2>
+    <p>Every KEV entry is flagged automatically in ShadowSecurityScanner: findings are sorted KEV →
+    EPSS → severity, and a daily catalog update pulls new KEV entries without a reinstall. See
+    <a href="../../guides/how-to-run-a-network-vulnerability-scan/">how to run a network vulnerability scan</a>.</p>
+    <div class="cta-band">
+      <h2 style="margin-top:0">Scan for known-exploited vulnerabilities</h2>
+      <p>Free and open-source, with CISA KEV and EPSS built in.</p>
+      <a class="btn btn-primary btn-lg" href="../../#download">Download ShadowSecurityScanner</a>
+    </div>
+    <p class="meta">Sources: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noreferrer">CISA KEV</a>,
+    <a href="https://www.first.org/epss/" rel="noreferrer">FIRST.org EPSS</a>, Exploit-DB, Metasploit. ·
+    <a href="../">All weekly digests</a></p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="foot-brand"><img src="../../assets/logo.svg" alt="" width="28" height="28" /><span>ShadowSecurityScanner</span></div>
+    <nav class="foot-nav">
+      <a href="../../">Home</a>
+      <a href="../../guides/">Guides</a>
+      <a href="../../kev/">KEV digest</a>
+      <a href="../../changelog/">Changelog</a>
+      <a href="https://github.com/safetylab/ShadowSecurityScanner" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <div class="foot-meta"><span>© 2026 AndriiGordiienko · MIT License</span></div>
+  </footer>
+</body>
+</html>

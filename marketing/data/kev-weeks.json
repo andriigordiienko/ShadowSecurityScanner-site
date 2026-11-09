@@ -23,5 +23,10 @@
     "count": 10,
     "span": "Oct 26 – Nov 1, 2026",
     "top": "CVE-2026-109618 (PHP Group PHP)"
+  },
+  "2026-w45": {
+    "count": 3,
+    "span": "Nov 2–8, 2026",
+    "top": "CVE-2024-27834 (Apple Multiple Products)"
   }
 }
