@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-11-16T19:41:02+00:00",
+  "description": "12 vulnerabilities CISA added to KEV in week 46 of 2026, with EPSS scores, public exploits, ransomware use and due dates.",
+  "done": {},
+  "id": "kev-2026-w46",
+  "long": "CISA KEV weekly digest, Nov 9–15, 2026: 12 newly confirmed exploited vulnerabilities.\n\nFix first:\n• CVE-2026-123158 — OpenBSD OpenSSH, EPSS 19%\n• CVE-2026-116606 — Barracuda Networks Barracuda Email Security Gateway (ESG), EPSS 11%\n• CVE-2026-111560 — Barracuda Networks Multiple Products, EPSS 9%\n• CVE-2026-116779 — SignalWire FreeSwitch, EPSS 2%\n• CVE-2026-123039 — Check Point Multiple Products, EPSS 2%\n…and 7 more.\n\nFull table with EPSS, public exploits, ransomware use and CISA due dates:",
+  "short": "CISA added 12 exploited vulns to KEV last week (Nov 9–15, 2026). Top risk: CVE-2026-123158 (OpenBSD), CVE-2026-116606 (Barracuda Networks). EPSS, exploits and deadlines:",
+  "tags": [
+    "CISA",
+    "KEV",
+    "infosec",
+    "vulnerabilitymanagement"
+  ],
+  "title": "CISA KEV weekly digest: Nov 9–15, 2026 (12 new exploited CVEs)",
+  "url": "https://shadowsecurityscanner.com/kev/2026-w46/"
+}

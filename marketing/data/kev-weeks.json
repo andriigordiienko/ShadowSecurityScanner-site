@@ -28,5 +28,10 @@
     "count": 3,
     "span": "Nov 2–8, 2026",
     "top": "CVE-2024-27834 (Apple Multiple Products)"
+  },
+  "2026-w46": {
+    "count": 12,
+    "span": "Nov 9–15, 2026",
+    "top": "CVE-2026-123158 (OpenBSD OpenSSH)"
   }
 }
