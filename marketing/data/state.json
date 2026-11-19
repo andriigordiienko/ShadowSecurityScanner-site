@@ -1,5 +1,5 @@
 {
-  "announced_release": "v1.5.10",
+  "announced_release": "v1.6.0",
   "kev_announced": [
     "2026-w40",
     "2026-w41",
@@ -9,7 +9,7 @@
     "2026-w45",
     "2026-w46"
   ],
-  "last_daily": "2026-11-18",
+  "last_daily": "2026-11-19",
   "last_kev": "2026-w47",
   "last_report": "2026-w47",
   "mentions_seen": [
@@ -45,7 +45,9 @@
     "hn-50500785",
     "se-security-287456",
     "hn-50523397",
-    "hn-50519095"
+    "hn-50519095",
+    "hn-50558404",
+    "hn-50557764"
   ],
-  "mentions_since": 1795002867
+  "mentions_since": 1795089105
 }

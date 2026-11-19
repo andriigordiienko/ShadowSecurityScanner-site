@@ -6,14 +6,14 @@
   <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
   <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
   <title>Changelog — ShadowSecurityScanner releases</title>
-  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.5.10 (2026-11-11)." />
+  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.6.0 (2026-11-19)." />
   <meta name="author" content="AndriiGordiienko" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0a0e16" />
   <link rel="canonical" href="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Changelog — ShadowSecurityScanner releases" />
-  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.5.10 (2026-11-11)." />
+  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.6.0 (2026-11-19)." />
   <meta property="og:url" content="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -28,8 +28,8 @@
       "name": "ShadowSecurityScanner",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows, macOS, Linux",
-      "softwareVersion": "1.5.10",
-      "datePublished": "2026-11-11",
+      "softwareVersion": "1.6.0",
+      "datePublished": "2026-11-19",
       "releaseNotes": "https://shadowsecurityscanner.com/changelog/",
       "offers": {
         "@type": "Offer",
@@ -77,11 +77,67 @@
     <div class="article-head">
       <span class="eyebrow">Changelog</span>
       <h1>ShadowSecurityScanner changelog</h1>
-      <p class="meta">Latest: v1.5.10 · 2026-11-11 · 15 releases</p>
+      <p class="meta">Latest: v1.6.0 · 2026-11-19 · 16 releases</p>
     </div>
     <p>Every release of the free, open-source vulnerability scanner — new checks, fixes and
     performance work. Builds for Windows, macOS and Linux are attached to each release on
     <a href="https://github.com/safetylab/ShadowSecurityScanner/releases" rel="noreferrer">GitHub</a>.</p>
+    <section id="v1.6.0">
+      <h2>v1.6.0 <span class="meta">· 2026-11-19</span></h2>
+<h4>New</h4>
+<ul>
+  <li>GET /scans/{id}/tasks?finished_after= returns what changed (<code>api</code>)</li>
+  <li>Sign in with the API token from the UI, the WebSocket included (<code>auth</code>)</li>
+  <li>Serve HTTPS with SS_TLS_CERT and SS_TLS_KEY (<code>server</code>)</li>
+  <li>Declarative check-pack format, compiler and matcher (<code>checkpack</code>)</li>
+  <li>Run byte and multi-step checks as a plugin per pack (<code>packs</code>)</li>
+  <li>Trust levels for check-pack sources, enforced at load (<code>sources</code>)</li>
+  <li>Sync a signed feed's check packs (<code>sources</code>)</li>
+  <li>A post-service stage, the snapshot it sees, and app logins (<code>engine</code>)</li>
+  <li>Run an operator's own check as a plugin (<code>scripts</code>)</li>
+  <li>Sign a check pack or a script manifest (<code>packsign</code>)</li>
+  <li>Packcheck, drop reasons at startup, and a tier-2 example (<code>sdk</code>)</li>
+  <li>A Sources page, and credentials in the scan wizard (<code>settings</code>)</li>
+  <li>Run the post-service stage for real, and show where a check came from (<code>sdk</code>)</li>
+  <li>Show where a check came from, and filter findings by it (<code>plugins</code>)</li>
+  <li>Read packs from a folder the operator points at (<code>sources</code>)</li>
+  <li>Point the scanner at a folder of your own packs (<code>sources</code>)</li>
+  <li>Refresh the CVE pack daily, over the signed feed (<code>cve</code>)</li>
+  <li>Refresh what the scanner finds with, daily and over the feed (<code>probes</code>)</li>
+</ul>
+<h4>Fixes</h4>
+<ul>
+  <li>Stop five false positives seen on the live bench (<code>plugins</code>)</li>
+  <li>Claim a CVE only when the check shows it, not on presence (<code>plugins</code>)</li>
+  <li>Run UDP, mail and CGI checks where the services really are (<code>plugins</code>)</li>
+  <li>Report RC4, 3DES and TLS 1.0 that a combined probe hid (<code>tls</code>)</li>
+  <li>Refuse cross-site changes, frame the UI nowhere, check what standalone serves (<code>security</code>)</li>
+  <li>Networks are created and deleted whole; imports are bounded (<code>targets</code>)</li>
+  <li>Report an exposed Apache mod_status page (<code>http</code>)</li>
+  <li>OpenSSH patch levels, KEV from the catalog, unescaped Cisco bounds (<code>cverules</code>)</li>
+  <li>Close waits for the background loops before the database closes (<code>app</code>)</li>
+  <li>A scan names the schedule that launched it (<code>schedules</code>)</li>
+  <li>API client survives odd error bodies, hung requests; query on every method (<code>frontend</code>)</li>
+  <li>One load-error toast, not a stream; say when a setting was not saved (<code>frontend</code>)</li>
+  <li>Add and delete a network with one request each (<code>frontend</code>)</li>
+  <li>Table rows keep their row role; numbers in the UI's own locale (<code>frontend</code>)</li>
+  <li>The PDF prints Cyrillic and other non-Latin text (<code>reports</code>)</li>
+  <li>Report a detection whose product has no CVE range (<code>packs</code>)</li>
+  <li>Give the sweep headers, detect, and the method it issues (<code>cgi</code>)</li>
+  <li>Run both tiers through the engine, and fix what that found (<code>sdk</code>)</li>
+  <li>Stop evidence claiming a reply contained what was missing (<code>checks</code>)</li>
+  <li>Do not announce a feature the release took back (<code>release</code>)</li>
+</ul>
+<h4>Performance</h4>
+<ul>
+  <li>Write a task's findings and log lines in one transaction each (<code>engine</code>)</li>
+  <li>A read-only connection pool beside the single writer (<code>storage</code>)</li>
+  <li>Index the findings list's default order (<code>storage</code>)</li>
+  <li>Keep Recharts and TanStack Table out of the startup path (<code>frontend</code>)</li>
+  <li>A live scan page follows the events and polls only to reconcile (<code>frontend</code>)</li>
+</ul>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.6.0" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
     <section id="v1.5.10">
       <h2>v1.5.10 <span class="meta">· 2026-11-11</span></h2>
 <h4>Fixes</h4>

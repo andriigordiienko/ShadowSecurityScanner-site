@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-11-19T11:51:38+00:00",
+  "description": "Free, open-source network vulnerability scanner that ranks findings by real-world exploitability (EPSS + CISA KEV). Windows, macOS, Linux. No cloud, no telemetry. MIT.",
+  "done": {},
+  "id": "release-v1.6.0",
+  "long": "ShadowSecurityScanner v1.6.0 is out.\n\nWhat's new:\n• GET /scans/{id}/tasks?finished_after= returns what changed\n• Sign in with the API token from the UI, the WebSocket included\n• Serve HTTPS with SS_TLS_CERT and SS_TLS_KEY\n\nFree, open-source network vulnerability scanner that ranks findings by real-world exploitability (FIRST.org EPSS + CISA KEV). Single desktop app for Windows, macOS and Linux — no cloud, no telemetry, MIT-licensed.\n\nFull changelog: https://shadowsecurityscanner.com/changelog/#v1.6.0",
+  "short": "ShadowSecurityScanner v1.6.0 is out — free, open-source vuln scanner with EPSS + CISA KEV prioritisation.",
+  "tags": [
+    "infosec",
+    "cybersecurity",
+    "opensource",
+    "vulnerabilitymanagement"
+  ],
+  "title": "ShadowSecurityScanner v1.6.0",
+  "url": "https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.6.0"
+}
