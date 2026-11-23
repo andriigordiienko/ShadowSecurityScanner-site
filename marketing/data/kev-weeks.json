@@ -33,5 +33,10 @@
     "count": 12,
     "span": "Nov 9–15, 2026",
     "top": "CVE-2026-123158 (OpenBSD OpenSSH)"
+  },
+  "2026-w47": {
+    "count": 9,
+    "span": "Nov 16–22, 2026",
+    "top": "CVE-2026-40217 (BerriAI LiteLLM)"
   }
 }
