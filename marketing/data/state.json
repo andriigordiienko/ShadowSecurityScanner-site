@@ -10,7 +10,7 @@
     "2026-w46",
     "2026-w47"
   ],
-  "last_daily": "2026-11-24",
+  "last_daily": "2026-11-25",
   "last_kev": "2026-w48",
   "last_report": "2026-w48",
   "mentions_seen": [
@@ -50,7 +50,8 @@
     "hn-50558404",
     "hn-50557764",
     "hn-50593848",
-    "hn-50627949"
+    "hn-50627949",
+    "se-security-288481"
   ],
-  "mentions_since": 1795528524
+  "mentions_since": 1795596522
 }
