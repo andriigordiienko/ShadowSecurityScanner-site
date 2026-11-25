@@ -6,14 +6,14 @@
   <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
   <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
   <title>Changelog — ShadowSecurityScanner releases</title>
-  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.1 (2026-11-24)." />
+  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.4 (2026-11-25)." />
   <meta name="author" content="AndriiGordiienko" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0a0e16" />
   <link rel="canonical" href="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Changelog — ShadowSecurityScanner releases" />
-  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.1 (2026-11-24)." />
+  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.4 (2026-11-25)." />
   <meta property="og:url" content="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -28,8 +28,8 @@
       "name": "ShadowSecurityScanner",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows, macOS, Linux",
-      "softwareVersion": "1.8.1",
-      "datePublished": "2026-11-24",
+      "softwareVersion": "1.8.4",
+      "datePublished": "2026-11-25",
       "releaseNotes": "https://shadowsecurityscanner.com/changelog/",
       "offers": {
         "@type": "Offer",
@@ -77,11 +77,57 @@
     <div class="article-head">
       <span class="eyebrow">Changelog</span>
       <h1>ShadowSecurityScanner changelog</h1>
-      <p class="meta">Latest: v1.8.1 · 2026-11-24 · 19 releases</p>
+      <p class="meta">Latest: v1.8.4 · 2026-11-25 · 22 releases</p>
     </div>
     <p>Every release of the free, open-source vulnerability scanner — new checks, fixes and
     performance work. Builds for Windows, macOS and Linux are attached to each release on
     <a href="https://github.com/safetylab/ShadowSecurityScanner/releases" rel="noreferrer">GitHub</a>.</p>
+    <section id="v1.8.4">
+      <h2>v1.8.4 <span class="meta">· 2026-11-25</span></h2>
+<h4>New</h4>
+<ul>
+  <li>Keyword pass and CISA Vulnrichment ranges (<code>cverulesgen</code>)</li>
+  <li>Exchange and SharePoint CVEs by fixed build (<code>vendoradvgen</code>)</li>
+  <li>CVEs by version for ten more products and SharePoint (<code>plugins</code>)</li>
+  <li>End-of-life table from endoflife.date for 63 products (<code>eol</code>)</li>
+  <li>Citrix NetScaler release from its build time (<code>plugins</code>)</li>
+  <li>GitLab release from its frontend build (<code>plugins</code>)</li>
+  <li>OpenSSH on Debian and Ubuntu read against their own fixes (<code>plugins</code>)</li>
+  <li>VCenter and ESXi CVEs by build (<code>plugins</code>)</li>
+  <li>Cisco ASA release from the AnyConnect gateway (<code>plugins</code>)</li>
+  <li>Niagara release from the Fox hello, CIP device identity (<code>icsplugin</code>)</li>
+  <li>WordPress plugins matched by their installed release (<code>plugins</code>)</li>
+  <li>CVEs by version for SQL Server and ten more products (<code>plugins</code>)</li>
+  <li>PHP on Debian and Ubuntu read against their own fixes (<code>backport</code>)</li>
+  <li>Windows Server end of support from the SMB build (<code>eol</code>)</li>
+  <li>OSV pass for the products that are packages (<code>cverulesgen</code>)</li>
+  <li>QNAP firmware and WordPress themes matched by release (<code>plugins</code>)</li>
+</ul>
+<h4>Fixes</h4>
+<ul>
+  <li>Keyword pass leaves out WordPress and VulDB records (<code>cverulesgen</code>)</li>
+</ul>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.4" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.8.3">
+      <h2>v1.8.3 <span class="meta">· 2026-11-25</span></h2>
+<h4>Breaking changes</h4>
+<ul>
+  <li>Go 1.27.4; the macOS app needs macOS 13 Ventura or later (<code>go</code>)</li>
+</ul>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.3" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
+    <section id="v1.8.2">
+      <h2>v1.8.2 <span class="meta">· 2026-11-25</span></h2>
+<h4>New</h4>
+<ul>
+  <li>CVEs by version for eight more products (<code>plugins</code>)</li>
+  <li>CPEs and CNAs for the new products; CNA lines per branch (<code>cverulesgen</code>)</li>
+  <li>Versions for NiFi, Superset, OFBiz and Mosquitto (<code>plugins</code>)</li>
+  <li>GitHub advisories; Jenkins LTS lines; Atlassian spans (<code>cverulesgen</code>)</li>
+</ul>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.2" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
     <section id="v1.8.1">
       <h2>v1.8.1 <span class="meta">· 2026-11-24</span></h2>
 <h4>Fixes</h4>
