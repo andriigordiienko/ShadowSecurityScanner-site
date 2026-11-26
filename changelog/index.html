@@ -6,14 +6,14 @@
   <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
   <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
   <title>Changelog — ShadowSecurityScanner releases</title>
-  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.4 (2026-11-25)." />
+  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.5 (2026-11-26)." />
   <meta name="author" content="AndriiGordiienko" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0a0e16" />
   <link rel="canonical" href="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Changelog — ShadowSecurityScanner releases" />
-  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.4 (2026-11-25)." />
+  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.5 (2026-11-26)." />
   <meta property="og:url" content="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -28,8 +28,8 @@
       "name": "ShadowSecurityScanner",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows, macOS, Linux",
-      "softwareVersion": "1.8.4",
-      "datePublished": "2026-11-25",
+      "softwareVersion": "1.8.5",
+      "datePublished": "2026-11-26",
       "releaseNotes": "https://shadowsecurityscanner.com/changelog/",
       "offers": {
         "@type": "Offer",
@@ -77,11 +77,39 @@
     <div class="article-head">
       <span class="eyebrow">Changelog</span>
       <h1>ShadowSecurityScanner changelog</h1>
-      <p class="meta">Latest: v1.8.4 · 2026-11-25 · 22 releases</p>
+      <p class="meta">Latest: v1.8.5 · 2026-11-26 · 23 releases</p>
     </div>
     <p>Every release of the free, open-source vulnerability scanner — new checks, fixes and
     performance work. Builds for Windows, macOS and Linux are attached to each release on
     <a href="https://github.com/safetylab/ShadowSecurityScanner/releases" rel="noreferrer">GitHub</a>.</p>
+    <section id="v1.8.5">
+      <h2>v1.8.5 <span class="meta">· 2026-11-26</span></h2>
+<h4>New</h4>
+<ul>
+  <li>The distribution release a banner names, past its support (<code>eol</code>)</li>
+  <li>AD CS Web Enrollment (ESC8) and WebDAV as relay targets (<code>httpplugin</code>)</li>
+  <li>Third-party scripts from unregistered or compromised hosts (<code>httpplugin</code>)</li>
+  <li>The UPnP stack's CVEs, more of the device descriptor (<code>discoplugin</code>)</li>
+  <li>Unauthenticated iSCSI discovery (<code>iscsiplugin</code>)</li>
+  <li>Cobalt Strike team servers by certificate and stager (<code>plugins</code>)</li>
+  <li>TLS and SSH keys whose private halves are public (<code>plugins</code>)</li>
+  <li>Releases of file-transfer, AI and Erlang SSH services; retire.js libraries (<code>plugins</code>)</li>
+  <li>Red Hat's word on httpd and OpenSSL CVEs for RHEL and its rebuilds (<code>backport</code>)</li>
+  <li>Siemens S7 controllers by order number against Siemens' CSAF advisories (<code>plugins</code>)</li>
+  <li>Distrusted CAs, Mozilla's intermediate profile, abuse.ch's SSL Blacklist (<code>tlsplugin</code>)</li>
+  <li>What is published about a target's address (<code>ipintelplugin</code>)</li>
+  <li>Gitleaks' provider rules, ssh-audit's ratings, the Public Suffix List (<code>plugins</code>)</li>
+  <li>Recog's banner fingerprints, and CVEs for the products it names (<code>fingerprint</code>)</li>
+  <li>Certificate Transparency and post-quantum key exchange (<code>tlsplugin</code>)</li>
+  <li>A Content-Security-Policy that would not stop an injected script (<code>httpplugin</code>)</li>
+  <li>Recog for SIP, RTSP, MySQL and HTTP challenges; ENISA EUVD's exploited list (<code>plugins</code>)</li>
+</ul>
+<h4>Fixes</h4>
+<ul>
+  <li>Read an ECDSA key's x from its encoding, not the deprecated field (<code>tlsplugin</code>)</li>
+</ul>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.5" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
     <section id="v1.8.4">
       <h2>v1.8.4 <span class="meta">· 2026-11-25</span></h2>
 <h4>New</h4>

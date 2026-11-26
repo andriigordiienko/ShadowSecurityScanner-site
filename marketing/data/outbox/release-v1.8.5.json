@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-11-26T17:03:20+00:00",
+  "description": "Free, open-source network vulnerability scanner that ranks findings by real-world exploitability (EPSS + CISA KEV). Windows, macOS, Linux. No cloud, no telemetry. MIT.",
+  "done": {},
+  "id": "release-v1.8.5",
+  "long": "ShadowSecurityScanner v1.8.5 is out.\n\nWhat's new:\n• The distribution release a banner names, past its support\n• AD CS Web Enrollment (ESC8) and WebDAV as relay targets\n• Third-party scripts from unregistered or compromised hosts\n\nFree, open-source network vulnerability scanner that ranks findings by real-world exploitability (FIRST.org EPSS + CISA KEV). Single desktop app for Windows, macOS and Linux — no cloud, no telemetry, MIT-licensed.\n\nFull changelog: https://shadowsecurityscanner.com/changelog/#v1.8.5",
+  "short": "ShadowSecurityScanner v1.8.5 is out — free, open-source vuln scanner with EPSS + CISA KEV prioritisation.\n\nNew: The distribution release a banner names, past its support; AD CS Web Enrollment (ESC8) and WebDAV as relay targets",
+  "tags": [
+    "infosec",
+    "cybersecurity",
+    "opensource",
+    "vulnerabilitymanagement"
+  ],
+  "title": "ShadowSecurityScanner v1.8.5",
+  "url": "https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.5"
+}
