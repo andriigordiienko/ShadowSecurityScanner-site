@@ -1,0 +1,17 @@
+{
+  "attempts": 0,
+  "created": "2026-11-27T01:47:25+00:00",
+  "description": "Free, open-source network vulnerability scanner that ranks findings by real-world exploitability (EPSS + CISA KEV). Windows, macOS, Linux. No cloud, no telemetry. MIT.",
+  "done": {},
+  "id": "release-v1.8.6",
+  "long": "ShadowSecurityScanner v1.8.6 is out.\n\nWhat's new:\n• NFSv4 servers, and which of them accept sessions\n• Move targets between groups, and groups that stay a tree\n• GET /settings/engine reports the engine's limits\n\nFree, open-source network vulnerability scanner that ranks findings by real-world exploitability (FIRST.org EPSS + CISA KEV). Single desktop app for Windows, macOS and Linux — no cloud, no telemetry, MIT-licensed.\n\nFull changelog: https://shadowsecurityscanner.com/changelog/#v1.8.6",
+  "short": "ShadowSecurityScanner v1.8.6 is out — free, open-source vuln scanner with EPSS + CISA KEV prioritisation.\n\nNew: NFSv4 servers, and which of them accept sessions; Move targets between groups, and groups that stay a tree",
+  "tags": [
+    "infosec",
+    "cybersecurity",
+    "opensource",
+    "vulnerabilitymanagement"
+  ],
+  "title": "ShadowSecurityScanner v1.8.6",
+  "url": "https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.6"
+}

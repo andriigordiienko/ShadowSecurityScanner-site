@@ -6,14 +6,14 @@
   <meta name="google-site-verification" content="pavvQ_k1NvDGLWqNoWLqDAdIR3prVobNSzERwxsixx0" />
   <meta name="msvalidate.01" content="443E917CAA9649CC2AD1E681049AB99F" />
   <title>Changelog — ShadowSecurityScanner releases</title>
-  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.5 (2026-11-26)." />
+  <meta name="description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.6 (2026-11-26)." />
   <meta name="author" content="AndriiGordiienko" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#0a0e16" />
   <link rel="canonical" href="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Changelog — ShadowSecurityScanner releases" />
-  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.5 (2026-11-26)." />
+  <meta property="og:description" content="Release history of ShadowSecurityScanner, the free open-source vulnerability scanner. Latest: v1.8.6 (2026-11-26)." />
   <meta property="og:url" content="https://shadowsecurityscanner.com/changelog/" />
   <meta property="og:image" content="https://shadowsecurityscanner.com/assets/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -28,7 +28,7 @@
       "name": "ShadowSecurityScanner",
       "applicationCategory": "SecurityApplication",
       "operatingSystem": "Windows, macOS, Linux",
-      "softwareVersion": "1.8.5",
+      "softwareVersion": "1.8.6",
       "datePublished": "2026-11-26",
       "releaseNotes": "https://shadowsecurityscanner.com/changelog/",
       "offers": {
@@ -77,11 +77,35 @@
     <div class="article-head">
       <span class="eyebrow">Changelog</span>
       <h1>ShadowSecurityScanner changelog</h1>
-      <p class="meta">Latest: v1.8.5 · 2026-11-26 · 23 releases</p>
+      <p class="meta">Latest: v1.8.6 · 2026-11-26 · 24 releases</p>
     </div>
     <p>Every release of the free, open-source vulnerability scanner — new checks, fixes and
     performance work. Builds for Windows, macOS and Linux are attached to each release on
     <a href="https://github.com/safetylab/ShadowSecurityScanner/releases" rel="noreferrer">GitHub</a>.</p>
+    <section id="v1.8.6">
+      <h2>v1.8.6 <span class="meta">· 2026-11-26</span></h2>
+<h4>New</h4>
+<ul>
+  <li>NFSv4 servers, and which of them accept sessions (<code>nfs4plugin</code>)</li>
+  <li>Move targets between groups, and groups that stay a tree (<code>api</code>)</li>
+  <li>GET /settings/engine reports the engine's limits (<code>api</code>)</li>
+  <li>GET /scans/{id}/ports, the ports panel in one request (<code>api</code>)</li>
+  <li>GET /reports/generate downloads a report without saving it (<code>api</code>)</li>
+  <li>HTML and PDF reports detail each finding (<code>reportsvc</code>)</li>
+  <li>GitHub advisories that have no CVE (<code>cverules</code>)</li>
+  <li>Accounts with roles, behind SS_AUTH_USERS (<code>auth</code>)</li>
+  <li>Credentialed checks over SSH (<code>sshplugin</code>)</li>
+  <li>F5 BIG-IP and PAN-OS releases from their static files (<code>httpplugin</code>)</li>
+</ul>
+<h4>Fixes</h4>
+<ul>
+  <li>A pre-flight that does not drop live hosts (<code>scanengine</code>)</li>
+  <li>An address is a target once per group (<code>targetsvc</code>)</li>
+  <li>Probe a host's ports side by side, within a budget (<code>plugins</code>)</li>
+  <li>The pre-flight reads its dial hook once (<code>scanengine</code>)</li>
+</ul>
+      <p><a href="https://github.com/safetylab/ShadowSecurityScanner/releases/tag/v1.8.6" rel="noreferrer">Release page &amp; downloads →</a></p>
+    </section>
     <section id="v1.8.5">
       <h2>v1.8.5 <span class="meta">· 2026-11-26</span></h2>
 <h4>New</h4>
